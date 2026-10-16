@@ -1,0 +1,17 @@
+.DS_Store
+.build/
+build/
+DerivedData/
+*.xcuserstate
+xcuserdata/
+*.ipa
+*.dSYM/
+*.xcarchive/
+*.mobileprovision
+.env
+.env.*
+__pycache__/
+# Prévias geradas por scripts/render-previews.sh.
+/output/previews/
+# Fotos originais são referências locais privadas e não fazem parte do app.
+assets/

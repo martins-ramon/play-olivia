@@ -1,0 +1,1367 @@
+{
+  "version": 1,
+  "voice": "Serene",
+  "language": "pt-BR",
+  "model": "eleven_v3",
+  "speed": 0.94,
+  "clips": [
+    {
+      "id": "completed-letters",
+      "text": "O jardim floresceu! Você brincou com letras e montou palavras. Parabéns, Olívia! Quer escolher outra aventura?",
+      "model": "eleven_v3",
+      "sha256": "65fbb810e51b277dad44278f2b83ba44bf74cf5ef05531138c5e3284f059cbe7",
+      "kind": "feedback"
+    },
+    {
+      "id": "completed-memory",
+      "text": "Você encontrou todos os pares! Que memória, Olívia! Quer brincar mais uma vez?",
+      "model": "eleven_multilingual_v2",
+      "sha256": "c377b737aede60f77f5b2dd69206468b83cdb09ba006d0afbf4dadfb79e197bb",
+      "kind": "feedback"
+    },
+    {
+      "id": "completed-numbers",
+      "text": "Que piquenique gostoso! Você contou e juntou os lanchinhos. Parabéns, Olívia! Quer escolher outra aventura?",
+      "model": "eleven_v3",
+      "sha256": "e399a1098908ea6bb339140777760de0b9f570572c369b0cd3a118f1ffa8f65d",
+      "kind": "feedback"
+    },
+    {
+      "id": "completed-patterns",
+      "text": "O trem ficou completo! Você descobriu os desenhos que se repetem. Parabéns, Olívia! Quer escolher outra aventura?",
+      "model": "eleven_multilingual_v2",
+      "sha256": "46566db62c7ae4ddac695f56c5766873f37b447383cc093d9173afad53693bf1",
+      "kind": "feedback"
+    },
+    {
+      "id": "completed-writing",
+      "text": "Seu caderno ficou cheio de descobertas! Você escreveu letras e números. Parabéns, Olívia! Vamos brincar mais?",
+      "model": "eleven_multilingual_v2",
+      "sha256": "ead8ddd88c85457db1f13726026297762edc2b611325859d2425bb828942e158",
+      "kind": "feedback"
+    },
+    {
+      "id": "continue-next",
+      "text": "Você conseguiu! Quando quiser, toque em continuar para brincar mais.",
+      "model": "eleven_v3",
+      "sha256": "c36f202207e27e1ccc7bac537cbe5e1dd76605df0d8f4c6f49e09730968f0e78",
+      "kind": "instruction"
+    },
+    {
+      "id": "continue-reward",
+      "text": "Você conseguiu! Toque em ver minha conquista para descobrir sua surpresa.",
+      "model": "eleven_v3",
+      "sha256": "781fa0b01d5fdf9df4de150a9df1e7d90f4711d5a695073cd920dc28ccd5c08f",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-a",
+      "text": "Procure a letra á. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "f7952468cb7ba3dcdb4301aa0b56882e61449cf0602dffbbc93670c5c15aab99",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-b",
+      "text": "Procure a letra bê. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "b7806b3550cd4eef808f47eeb86a46da769eca6e3a0ec30dc9deb39af4635cd3",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-c",
+      "text": "Procure a letra cê. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "c3487b36a0a4836798bc87e9176e1c7357123270cd9dcf328dca627239b22dde",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-d",
+      "text": "Procure a letra dê. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "107325c016d03290fb0d2838ebe8170fe0b5c15c92c7d1fe1d86b0aa74bca465",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-e",
+      "text": "Procure a letra é. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "42a5e98a7fcf3cc99c2821b5825bc855545ceb2d7485f42a1af465e3614c0363",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-f",
+      "text": "Procure a letra efe. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "3a231363b1e69087efa30be0bbea0bd4c3fe9e6e465ae37d5ed8b77a736d665d",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-g",
+      "text": "Procure a letra gê. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "58535227986a06b9ef110f2c8e76a62bd288aa2bde5f8546606589450277be77",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-i",
+      "text": "Procure a letra i. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "aa20153da9ff9274cbeeb2ac15b8f3793148e177baf06ba44307eb8b9060fe26",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-l",
+      "text": "Procure a letra ele. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "a9097945348c4c0260bdfd1fa36188d12d8ead0a87191ba93e6537914cf609ed",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-m",
+      "text": "Procure a letra eme. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "a4c825c3be4b44bd82b8f15a3e864abcdcc977baa8daa763022d2a7ce5f723a9",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-n",
+      "text": "Procure a letra ene. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "d3a5af8ed47f5e9f892318cf10e84540aad51a9ab2f977f4fb7e7eb4a85c63f1",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-o",
+      "text": "Procure a letra ó. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "845f1492aa33230ac41038a1aa8b11239606ffcca02fa737255d54d13df6a8e5",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-p",
+      "text": "Procure a letra pê. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "3d722e5c1d165966e0e6c4768f97923f01074d3a4ff82b6acd2300f7b2477ed8",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-r",
+      "text": "Procure a letra erre. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "f21489ff5c0ed55b288a4a27f625834891bf0b3f76f9b067221cf469be242c7b",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-s",
+      "text": "Procure a letra esse. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "b1ab39ad2f37fc22e9cf4d7b4b3d382e934ddd301b2f1b8ac074858c0884448e",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-t",
+      "text": "Procure a letra tê. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "4753a12c09a85edfca18001457f878a905a1af5183ea7dcefc244c59bb030267",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-u",
+      "text": "Procure a letra u. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "7653036bc6004967297d33f22bb5d07fae924a15c05c31d6326fd56c533bda85",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-v",
+      "text": "Procure a letra vê. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "bee3bb0234a866b7ef4b89218db1481f43a15e9b24f44cae2c001ca90d5f0e55",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-letter-x",
+      "text": "Procure a letra xis. Ela está brilhando!",
+      "model": "eleven_v3",
+      "sha256": "99453a67c8ed4f94aa485800eb8379d754a282eb994d4dbfa1e2d03303d4d7b1",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-numbers-1",
+      "text": "Vamos contar juntos? um. É um lanchinho. Encontre o número um.",
+      "model": "eleven_v3",
+      "sha256": "042f14ab2b5b0bf9292f8cd56651b0c217f716c360167de27b331d230a366c97",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-numbers-10",
+      "text": "Vamos contar juntos? um, dois, três, quatro, cinco, seis, sete, oito, nove, dez. São dez lanchinhos. Encontre o número dez.",
+      "model": "eleven_v3",
+      "sha256": "31b249534274083b290c558047b3987d4eb46d47b2f308afacfb73ff5d6ae18f",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-numbers-2",
+      "text": "Vamos contar juntos? um, dois. São dois lanchinhos. Encontre o número dois.",
+      "model": "eleven_v3",
+      "sha256": "ed0f26ad7d481688ca11a01de74d448d313cb974c56e58481ba7ce4d8f5fa70a",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-numbers-3",
+      "text": "Vamos contar juntos? um, dois, três. São três lanchinhos. Encontre o número três.",
+      "model": "eleven_v3",
+      "sha256": "49c310e9cb639bd4556dc2cb1096b543e6010e3b062801e82f28c3a557e3967c",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-numbers-4",
+      "text": "Vamos contar juntos? um, dois, três, quatro. São quatro lanchinhos. Encontre o número quatro.",
+      "model": "eleven_v3",
+      "sha256": "6c5274abfac0e310bb4da35d15949b328b0bf9466ad1484dcbe0d253245cd0a0",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-numbers-5",
+      "text": "Vamos contar juntos? um, dois, três, quatro, cinco. São cinco lanchinhos. Encontre o número cinco.",
+      "model": "eleven_v3",
+      "sha256": "723ea02c3024239396cf7b9a84b6fa4286975fad2fc6d2b422c379cedb7e07e6",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-numbers-6",
+      "text": "Vamos contar juntos? um, dois, três, quatro, cinco, seis. São seis lanchinhos. Encontre o número seis.",
+      "model": "eleven_v3",
+      "sha256": "d3546d16e2c7d4f07d937716ac520dccb0b1175325e89b40fb0122b8a258d71a",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-numbers-7",
+      "text": "Vamos contar juntos? um, dois, três, quatro, cinco, seis, sete. São sete lanchinhos. Encontre o número sete.",
+      "model": "eleven_v3",
+      "sha256": "2749812372733ecd7662308d981e5e5c6030cc9d99349b758ca2e57445ac4270",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-numbers-8",
+      "text": "Vamos contar juntos? um, dois, três, quatro, cinco, seis, sete, oito. São oito lanchinhos. Encontre o número oito.",
+      "model": "eleven_v3",
+      "sha256": "7ea454617e07e70b094614ff9f8589e98d8812e23dfa96bdd7d7c3d7002a6635",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-numbers-9",
+      "text": "Vamos contar juntos? um, dois, três, quatro, cinco, seis, sete, oito, nove. São nove lanchinhos. Encontre o número nove.",
+      "model": "eleven_v3",
+      "sha256": "2c524c854404da40c913b22dc780519da5a98d7e33d6ec4b9d541ed7ad901e77",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-patterns-circle",
+      "text": "Veja o que se repete. Depois da última figura, vem um círculo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "38b97fa4502e4381f522af3fb936e884f5b59e621c1029f590f62dba2e17a395",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-patterns-flower",
+      "text": "Veja o que se repete. Depois da última figura, vem uma flor.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "6f99f17ccb60a30612b2697961143d5b06b3bcaeea2a984955dea1f190d3fc47",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-patterns-heart",
+      "text": "Veja o que se repete. Depois da última figura, vem um coração.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "e5b0412be14d570d3f779ddb99730275d15f4ade5c237605778a01cbe8aa9b50",
+      "kind": "instruction"
+    },
+    {
+      "id": "hint-patterns-star",
+      "text": "Veja o que se repete. Depois da última figura, vem uma estrela.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "4a011bc059cb4b7abbda59e0bcb4a7b400b847a446fd3b123000ed47d679e4c9",
+      "kind": "instruction"
+    },
+    {
+      "id": "letter-a",
+      "text": "á.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "db810031462328451d65f41e107e92746dd3564ff554d08319be37c62e1b2a5f",
+      "kind": "count"
+    },
+    {
+      "id": "letter-b",
+      "text": "bê.",
+      "model": "eleven_v3",
+      "sha256": "57085694fd22de9002b3c0fd6257e418e5dbe71795ad4d88ec50966d6fa70464",
+      "kind": "count"
+    },
+    {
+      "id": "letter-c",
+      "text": "cê.",
+      "model": "eleven_v3",
+      "sha256": "c832e83435a5bf380849830b782e42d9e33a4e0fa5fcc6af7c20dd1d8cad7f4c",
+      "kind": "count"
+    },
+    {
+      "id": "letter-d",
+      "text": "dê.",
+      "model": "eleven_v3",
+      "sha256": "9918f5ef98016c4afa4fc9970a88f6323021477665c1abf44f2277b342a61bd7",
+      "kind": "count"
+    },
+    {
+      "id": "letter-e",
+      "text": "é.",
+      "model": "eleven_v3",
+      "sha256": "985441d951057e924c0445d303545cd7c5b69db64c83d65424f910780e4582c9",
+      "kind": "count"
+    },
+    {
+      "id": "letter-f",
+      "text": "efe.",
+      "model": "eleven_v3",
+      "sha256": "628f0db2e0e787c3d1e4a1b5699e535ebf0c773f9a3c2a85a26f54877f2ecf30",
+      "kind": "count"
+    },
+    {
+      "id": "letter-g",
+      "text": "gê.",
+      "model": "eleven_v3",
+      "sha256": "57dd90aaa2a1fbdeb687e874ae0da342d487ea5fa2cffffa4e2b074b1fc33c13",
+      "kind": "count"
+    },
+    {
+      "id": "letter-i",
+      "text": "i.",
+      "model": "eleven_v3",
+      "sha256": "db583cf55198d5e1af0be5f1dee0de2fa0892184906ae247d172f70414a0e02e",
+      "kind": "count"
+    },
+    {
+      "id": "letter-l",
+      "text": "ele.",
+      "model": "eleven_v3",
+      "sha256": "dbc71a453796b672fe635c4e71ee13129c7ecdebdb35c9c53fa0d37e2b2e2553",
+      "kind": "count"
+    },
+    {
+      "id": "letter-m",
+      "text": "eme.",
+      "model": "eleven_v3",
+      "sha256": "9ed9015393c723b1f227d1d26e1c5fc01cf2b798c15aff9f4c608bc06a37fe59",
+      "kind": "count"
+    },
+    {
+      "id": "letter-n",
+      "text": "ene.",
+      "model": "eleven_v3",
+      "sha256": "f0c22133cfc3ce2dbbde0a6a0513d83a700dec835eaa654f585c4a98c5a33a39",
+      "kind": "count"
+    },
+    {
+      "id": "letter-o",
+      "text": "ó.",
+      "model": "eleven_v3",
+      "sha256": "1caf2e2b31bf0f4aaaa33d000c1abac78f8619ba54cdad2e650be74e6fa7e232",
+      "kind": "count"
+    },
+    {
+      "id": "letter-p",
+      "text": "pê.",
+      "model": "eleven_v3",
+      "sha256": "6227d3504c417facb4a46d5d80521f0a0ffdf75927fab1ea78f41e10723f3ddb",
+      "kind": "count"
+    },
+    {
+      "id": "letter-r",
+      "text": "erre.",
+      "model": "eleven_v3",
+      "sha256": "b20121ca96f7e6d542dbe21df47437675eb725262139105f4763c975a6498928",
+      "kind": "count"
+    },
+    {
+      "id": "letter-s",
+      "text": "esse.",
+      "model": "eleven_v3",
+      "sha256": "8d798a3965a04d0f49afe110fb2aa6bf131193d92790e632a9540c2256eea274",
+      "kind": "count"
+    },
+    {
+      "id": "letter-t",
+      "text": "tê.",
+      "model": "eleven_v3",
+      "sha256": "cd6495adaf15ae6fc43d64f4faec5296eed9ac9572c8377d43744899bf94cbe1",
+      "kind": "count"
+    },
+    {
+      "id": "letter-u",
+      "text": "u.",
+      "model": "eleven_v3",
+      "sha256": "b2ed2e502298db2376329adb8d947f8a8ae279566ad775cb33cd1d5a5a28e36e",
+      "kind": "count"
+    },
+    {
+      "id": "letter-v",
+      "text": "vê.",
+      "model": "eleven_v3",
+      "sha256": "3283712c3881b6c54545991bcbf66f2d1bac3638bb2100900d79b0379e738e17",
+      "kind": "count"
+    },
+    {
+      "id": "letter-x",
+      "text": "xis.",
+      "model": "eleven_v3",
+      "sha256": "bf375fc7e066584f73e40f0210a252ef3e79b198a990c708e7adfd0d9037d610",
+      "kind": "count"
+    },
+    {
+      "id": "letters-retry",
+      "text": "Tudo bem! Vamos tentar outra letra, com calma.",
+      "model": "eleven_v3",
+      "sha256": "2f6f2e6e23d3c21b6e381055a48c7f7bd7edc8803e9a7ae578283981f2881aca",
+      "kind": "feedback"
+    },
+    {
+      "id": "memory-completed-10",
+      "text": "Você encontrou todos os pares! Parabéns, Olívia! A próxima brincadeira tem doze peças. Vamos continuar?",
+      "model": "eleven_multilingual_v2",
+      "sha256": "bf35fe4f751c5770e76428d6629ca18f6dada84c90d3d0760f01cd7401610540",
+      "kind": "feedback"
+    },
+    {
+      "id": "memory-completed-12",
+      "text": "Você encontrou todos os pares! Parabéns, Olívia! A próxima brincadeira tem quatorze peças. Vamos continuar?",
+      "model": "eleven_multilingual_v2",
+      "sha256": "31ae21394717db4fc6e3e24499d6a7546470a4e5e9d6c224bf1f6f93752df72c",
+      "kind": "feedback"
+    },
+    {
+      "id": "memory-completed-14",
+      "text": "Você encontrou todos os pares! Parabéns, Olívia! A próxima brincadeira tem dezesseis peças. Vamos continuar?",
+      "model": "eleven_multilingual_v2",
+      "sha256": "d51c140e2e0577f2e941d7d243da2efd57b194e82edb11fc2c9621ddd15bd4cd",
+      "kind": "feedback"
+    },
+    {
+      "id": "memory-completed-6",
+      "text": "Você encontrou todos os pares! Parabéns, Olívia! A próxima brincadeira tem oito peças. Vamos continuar?",
+      "model": "eleven_multilingual_v2",
+      "sha256": "be5d1b778da63f9f00983574ba40f7b967ce6722bd73541d646ac6fc9956941e",
+      "kind": "feedback"
+    },
+    {
+      "id": "memory-completed-8",
+      "text": "Você encontrou todos os pares! Parabéns, Olívia! A próxima brincadeira tem dez peças. Vamos continuar?",
+      "model": "eleven_multilingual_v2",
+      "sha256": "445824aa2afe41fefb63a0f71f4f6f4bdda1e0fde27d55449d27587367d58c67",
+      "kind": "feedback"
+    },
+    {
+      "id": "memory-intro-10",
+      "text": "Vamos encontrar os pares? Temos dez peças. Vire duas e procure os desenhos iguais.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "8f382b140a4e153e82e7d35ef2459a5c4c272a8ab7ffad1d6a59d625c0fb0d2e",
+      "kind": "instruction"
+    },
+    {
+      "id": "memory-intro-12",
+      "text": "Vamos encontrar os pares? Temos doze peças. Vire duas e procure os desenhos iguais.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "4d064168621099e6199e5d386ade445deb60fee713937aae709029fd9839f004",
+      "kind": "instruction"
+    },
+    {
+      "id": "memory-intro-14",
+      "text": "Vamos encontrar os pares? Temos quatorze peças. Vire duas e procure os desenhos iguais.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "3a28d51095e6ec7bdbc0af523a6eae1f180a2b7b7c7f0f4561c7963fa46c67f8",
+      "kind": "instruction"
+    },
+    {
+      "id": "memory-intro-16",
+      "text": "Vamos encontrar os pares? Temos dezesseis peças. Vire duas e procure os desenhos iguais.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "907a8c492298d7e89db49fc4e29cddbc25472e041f11369317bb9ec1c75f61dc",
+      "kind": "instruction"
+    },
+    {
+      "id": "memory-intro-6",
+      "text": "Vamos encontrar os pares? Temos seis peças. Vire duas e procure os desenhos iguais.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "3f77a4b4b473ec8ae51cdf78c13870361db8906dda1bea2ac3550767f427f17d",
+      "kind": "instruction"
+    },
+    {
+      "id": "memory-intro-8",
+      "text": "Vamos encontrar os pares? Temos oito peças. Vire duas e procure os desenhos iguais.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "7128eb3224b3789da35ac9a339f0748346418eb844be3db88e3c6e22a097fc17",
+      "kind": "instruction"
+    },
+    {
+      "id": "memory-match",
+      "text": "Um par! Muito bem, Olívia!",
+      "model": "eleven_multilingual_v2",
+      "sha256": "b86e6d74a4b2910a8abdc426a973ede63c23a09ce222a16cf7ba6f3b0a1d45f4",
+      "kind": "feedback"
+    },
+    {
+      "id": "memory-try-again",
+      "text": "Essas são diferentes. Vamos tentar de novo?",
+      "model": "eleven_multilingual_v2",
+      "sha256": "a58e997c4903b4001ed09145c1005c84d4595fb993081f3b249bc870613b2eb4",
+      "kind": "feedback"
+    },
+    {
+      "id": "number-0",
+      "text": "Zero.",
+      "model": "eleven_v3",
+      "sha256": "06e2a14b3e29db2b1f846e9f6770993a8d36d7a90d2d714804a4abbd1f5a7112",
+      "kind": "count"
+    },
+    {
+      "id": "number-1",
+      "text": "Um.",
+      "model": "eleven_v3",
+      "sha256": "e900d53a9f3c9a9ea08ed742adf05c6833f6950e06c0cdbf1ec9d0bf8389b27e",
+      "kind": "count"
+    },
+    {
+      "id": "number-10",
+      "text": "Dez.",
+      "model": "eleven_v3",
+      "sha256": "8e309485884e34fa5e1662dad2321773e3a95ecdeeace76857f4cf924307a5db",
+      "kind": "count"
+    },
+    {
+      "id": "number-2",
+      "text": "Dois.",
+      "model": "eleven_v3",
+      "sha256": "0c16006e3a023557410ab17a1f5d2b15caaf37a54833b46e6256d7f25fe00d42",
+      "kind": "count"
+    },
+    {
+      "id": "number-3",
+      "text": "Três.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "498e9784e73bc3fcc0ea0495ab80d291d07d63cc0284eaad8da8cfc510e81cf8",
+      "kind": "count"
+    },
+    {
+      "id": "number-4",
+      "text": "Quatro.",
+      "model": "eleven_v3",
+      "sha256": "d03e261d830caaabf355d0c4d0c47f2defd83aaf4fb0fee585c15ead30f65c86",
+      "kind": "count"
+    },
+    {
+      "id": "number-5",
+      "text": "Cinco.",
+      "model": "eleven_v3",
+      "sha256": "bb4ef26eba12b1a9a7bec15001288c63f01028c3576010a717f43bc46a78d780",
+      "kind": "count"
+    },
+    {
+      "id": "number-6",
+      "text": "Seis.",
+      "model": "eleven_v3",
+      "sha256": "b441ea0dab92576b51dd3dbbfbab0d882f91d6a9543a1b4f6e5aae85c5481523",
+      "kind": "count"
+    },
+    {
+      "id": "number-7",
+      "text": "Sete.",
+      "model": "eleven_v3",
+      "sha256": "32c6ea6f60c3183e3573dedf58ec98abd313490b63b47cc59883b48e8633f18c",
+      "kind": "count"
+    },
+    {
+      "id": "number-8",
+      "text": "Oito.",
+      "model": "eleven_v3",
+      "sha256": "a9490fc42a9f5b49a3f6772fe43fd25db32299ec5736545fdc17542076d01189",
+      "kind": "count"
+    },
+    {
+      "id": "number-9",
+      "text": "Nove.",
+      "model": "eleven_v3",
+      "sha256": "65d074a8f8a7ce45a48d13e34d3f98c4f9027caadb7a47f0aa01fbf0a2e8be9f",
+      "kind": "count"
+    },
+    {
+      "id": "numbers-retry",
+      "text": "Tudo bem! Conte mais uma vez, com calma. Toque nos lanchinhos para contar.",
+      "model": "eleven_v3",
+      "sha256": "9506a360ee460239756833a127182a62ee594235448f7c0c34098a735908293c",
+      "kind": "feedback"
+    },
+    {
+      "id": "patterns-intro",
+      "text": "Olhe os desenhos do trem. Eles se repetem. Qual desenho vem agora?",
+      "model": "eleven_multilingual_v2",
+      "sha256": "8fc4372f5a85a99450697ae10ff5fe71c5f82572957687e714e4757230ed8751",
+      "kind": "instruction"
+    },
+    {
+      "id": "patterns-retry",
+      "text": "Vamos olhar de novo? Veja quais desenhos se repetem.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "5c9396bee1fc1e4e31b2d3f52e4d3dea43d7de836232aa079673b665087f784c",
+      "kind": "feedback"
+    },
+    {
+      "id": "patterns-success",
+      "text": "Isso! Você descobriu como o trem continua!",
+      "model": "eleven_multilingual_v2",
+      "sha256": "b0ff1b1053e68108c56867be7ffd113c6871001f4f523bd99e9f123c276b9773",
+      "kind": "feedback"
+    },
+    {
+      "id": "prompt-letters-explore-0",
+      "text": "Com que letra começa a palavra casa?",
+      "model": "eleven_v3",
+      "sha256": "078fc7f53a7fc6ba9c916b82fd1a37fc55f8ee8ebc7e8780574608e6c941e936",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-explore-1",
+      "text": "Vamos montar a palavra uva!",
+      "model": "eleven_v3",
+      "sha256": "9a3870d1ace1f19b074480f9211ebc34e1481c71916219cdf2fd1b70f8936754",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-explore-10",
+      "text": "Com que letra começa a palavra coco?",
+      "model": "eleven_v3",
+      "sha256": "149070830225f32a253c2d71f3a38645ac6f50a2869a75838c0789b94a7fe910",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-explore-11",
+      "text": "Vamos montar a palavra navio!",
+      "model": "eleven_v3",
+      "sha256": "580043699245a359f7792f5845750bb0d31d453882f0b1b24d29a40c7bd35d84",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-explore-2",
+      "text": "Com que letra começa a palavra dado?",
+      "model": "eleven_v3",
+      "sha256": "59fcff8f4bafe6657fe38cb36ba0700946ea33caa3bfdea6677fd144e1e81fc2",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-explore-3",
+      "text": "Vamos montar a palavra fada!",
+      "model": "eleven_multilingual_v2",
+      "sha256": "6af5e6bf68ea1f7e30893fdbf97157fa2a76f46f2557a678f8e06fb5af39b5ef",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-explore-4",
+      "text": "Com que letra começa a palavra lupa?",
+      "model": "eleven_v3",
+      "sha256": "dd4f483a644cfd9eedb48fcf09ce44a4daef2365e2d4573538433d2526183146",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-explore-5",
+      "text": "Vamos montar a palavra rosa!",
+      "model": "eleven_v3",
+      "sha256": "e31ea5698132c24a3baf5e5ff24c65a98e081189d2b889eeee484922432dfbb8",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-explore-6",
+      "text": "Com que letra começa a palavra peixe?",
+      "model": "eleven_v3",
+      "sha256": "bfe302af876f348e31d42dc6073dd7ddabfc8cc589972de742c18620c97d98cb",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-explore-7",
+      "text": "Vamos montar a palavra livro!",
+      "model": "eleven_v3",
+      "sha256": "f921418c0e9f212ca771b4127b0ec97e238a634e8ca692eb37b867289ba48346",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-explore-8",
+      "text": "Com que letra começa a palavra pipa?",
+      "model": "eleven_v3",
+      "sha256": "44e9ce1209f126c3e607a408e0c86245b859028ac863c2b6c028fd0e28805476",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-explore-9",
+      "text": "Vamos montar a palavra panda!",
+      "model": "eleven_v3",
+      "sha256": "feade3227c4cb1a8476e6d3ba1eddffb5813fc591137dfaf6b61140c4754fcaa",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-start-0",
+      "text": "Com que letra começa a palavra sol?",
+      "model": "eleven_v3",
+      "sha256": "c2bf8d28abf7c4731820543decb53ba6fb32706c6e15d3eddeb24ef2c28d0334",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-start-1",
+      "text": "Vamos montar a palavra lua!",
+      "model": "eleven_v3",
+      "sha256": "957209f7707394bbeb1e1320b385529381efd404147f24899b5da836e57c7dde",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-start-2",
+      "text": "Com que letra começa a palavra bola?",
+      "model": "eleven_v3",
+      "sha256": "20adb501dcd9fa48b7276ecee5b916ae63a808dbcb8419d4971656a9b3ed56ae",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-start-3",
+      "text": "Vamos montar a palavra gato!",
+      "model": "eleven_v3",
+      "sha256": "3e0e89231b0bd1c221e7acacc498cc30f5a404d3bd2c6dd6f5ca5fb766a2c87d",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-start-4",
+      "text": "Com que letra começa a palavra sapo?",
+      "model": "eleven_v3",
+      "sha256": "0b689e2dc2ca38ddb6f32621355faa92541f3ee34771c4d5b36646b4e7be3b35",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-start-5",
+      "text": "Vamos montar a palavra pato!",
+      "model": "eleven_v3",
+      "sha256": "20323c264ba5df94017cbe30bc7d7896c1f152efb1d4abe5816f35cc83ae4ff7",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-start-6",
+      "text": "Com que letra começa a palavra mala?",
+      "model": "eleven_v3",
+      "sha256": "adaa27b6e1c00c051552148f06ec6257ba8455d4286c2ace3dc01a6cde75f7e6",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-start-7",
+      "text": "Vamos montar a palavra vaca!",
+      "model": "eleven_v3",
+      "sha256": "3d3bcd4d5689c774b060aaac0aa71496ffd16fac755584a19a876307b00dc965",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-start-8",
+      "text": "Com que letra começa a palavra bolo?",
+      "model": "eleven_v3",
+      "sha256": "eed0277cf35d77cf655fb3c0ffcc2b49cf1e34db67d4cb78df11134349998754",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-letters-start-9",
+      "text": "Vamos montar a palavra foca!",
+      "model": "eleven_v3",
+      "sha256": "db0dd134601ddc89c603ca472558740f072b0a7c07e1b2bbe87c7f202d673fa9",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-numbers-add-apple",
+      "text": "Junte os dois grupos. Quantas maçãs temos ao todo?",
+      "model": "eleven_v3",
+      "sha256": "e4a18330ccd2cdab73c65880e37fe0fb929e3d57e058e036b6ad89fab8e6b796",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-numbers-add-banana",
+      "text": "Junte os dois grupos. Quantas bananas temos ao todo?",
+      "model": "eleven_v3",
+      "sha256": "2f5f504d39c369953a6ed894e4761ddb2bc0402e404ccd64bc9350c78cb4c3b2",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-numbers-add-cookie",
+      "text": "Junte os dois grupos. Quantos biscoitos temos ao todo?",
+      "model": "eleven_v3",
+      "sha256": "e0043b4496ae1ed76739ada51d8f646c8b377792a8cbb4399d03c163e4cd2120",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-numbers-add-strawberry",
+      "text": "Junte os dois grupos. Quantos morangos temos ao todo?",
+      "model": "eleven_v3",
+      "sha256": "f76e1e3f9e83c9ab7827604214406759bb14d769b612ca79339f7e12efb7a468",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-numbers-count-apple",
+      "text": "Quantas maçãs temos no piquenique?",
+      "model": "eleven_multilingual_v2",
+      "sha256": "b05725bc4cd939c443cd621523a3c3aec26eba8d8168c64778ee4683f64cd079",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-numbers-count-banana",
+      "text": "Quantas bananas temos no piquenique?",
+      "model": "eleven_v3",
+      "sha256": "72263dbb591e4ba5b23e9fd0b48bf6f77cd4668b2df1727f26226a35b192d276",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-numbers-count-cookie",
+      "text": "Quantos biscoitos temos no piquenique?",
+      "model": "eleven_v3",
+      "sha256": "f3be9b1bfb08530b7d22eb927e22888baf13bd4e70f4a9468e4c2b98a1bdbc47",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-numbers-count-strawberry",
+      "text": "Quantos morangos temos no piquenique?",
+      "model": "eleven_v3",
+      "sha256": "aa88fb5a1d41585ff2bb9b92777b674cbbd6e12ece2e8f080f2532577911ff25",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-a",
+      "text": "Vamos escrever a letra á. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "952f25d9ad62f750a1c99bc6dead2be227d241303d96c3e23459543688bff163",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-b",
+      "text": "Vamos escrever a letra bê. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "81723a2cb153eb8e71dd6250789502a0f1934f969da0ab1d143b992b35b3768d",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-c",
+      "text": "Vamos escrever a letra cê. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "ac6d958c08633fc76bc12bd2232c9b68d9fac5fe0f60beccf7356b47ca062e7f",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-d",
+      "text": "Vamos escrever a letra dê. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "1587f55742e3a8df8b2b65ac87994d0e623043ead9040cd04f8ad6bbc215cfb6",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-e",
+      "text": "Vamos escrever a letra é. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "ef17c149d645c940f6afeb025d60391adc02412e2fcca9eca9e4d258996d3754",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-f",
+      "text": "Vamos escrever a letra efe. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "4dd9c2f0d277aa0f839dbd012d5576354ade7119999d2d0460c5c15c55024f7e",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-g",
+      "text": "Vamos escrever a letra gê. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "6db8ff84dcd7a24442c04b4b5b6010c98adbc82990f0042ab86f2dd2a0e04195",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-h",
+      "text": "Vamos escrever a letra agá. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "bb3790ec3dc518b4b7d6ee0602afd3df78f6c6cd9d7b938896a634835ab130ad",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-i",
+      "text": "Vamos escrever a letra i. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "3b8de5dd673975a930f6fe1efb389cb0edaa97a377d4e8d4b1b96fd477506d58",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-j",
+      "text": "Vamos escrever a letra jota. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "8d32a9ee72789fe33d125a3fef6b2874edf2d36ecb30cf5500616fd100a54ec9",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-k",
+      "text": "Vamos escrever a letra cá. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "20bf54b3155bd4f146449f87db3b9903c6d9d980d192e2e845caa9d8d162ccd3",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-l",
+      "text": "Vamos escrever a letra ele. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "7fea0215456577fcab18163800e4eaff08980601f9ca72dfe7862736e9e813b6",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-m",
+      "text": "Vamos escrever a letra eme. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "7448eebbca6045269dc800ba7f47b70ce12d7d64491e77e2fcbf147ad5e64be0",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-n",
+      "text": "Vamos escrever a letra ene. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "8734df3ff8b687054cb87ff3a9fb4bac4573bf613bf20d5d252993c76db9d3bf",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-o",
+      "text": "Vamos escrever a letra ó. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "077743be175fed37baf8c66cd0d9ecc13a9c3a5d56b66346d97541d882941581",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-p",
+      "text": "Vamos escrever a letra pê. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "499b39520ed5f7b843ff8e9994733e51aadd57d4e58cca422baa453890e186e7",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-q",
+      "text": "Vamos escrever a letra quê. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "4d8418bc3dfbef8e91a0d0d280e90ae719f31c677f8df2c029346646f2fdde76",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-r",
+      "text": "Vamos escrever a letra erre. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "67f8ac19f3112227bbec49f6141b5431378eb3c45d2e0f26fe94efb5bae564d6",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-s",
+      "text": "Vamos escrever a letra esse. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "1628ed29a91ea448f5f9d5300828113caa879a86790959990d56c0724ca5716e",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-t",
+      "text": "Vamos escrever a letra tê. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "582c235403d494c6e60002c185476b4a0e30dd7a89c80f91dd93d59fa1d1f21f",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-u",
+      "text": "Vamos escrever a letra u. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "1beb59ae812ad6a21751987ea435d05fb627b55a7735027f49fd26c53c4a936c",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-v",
+      "text": "Vamos escrever a letra vê. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "57062137e2fdb29ea8fa8644d0a987657cc0a0c1ed64ca4b3f5aecfa2d7fbacc",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-w",
+      "text": "Vamos escrever a letra dáblio. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "0ab6adef4cfdc68ed6a11d4b2fcca3d198c870ccd41cd0e26d892fd2e293a99a",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-x",
+      "text": "Vamos escrever a letra xis. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "7b7da862f7d7c43a342c3957011381407a3fa58786498eecd0922d29d0166939",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-y",
+      "text": "Vamos escrever a letra ípsilon. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "954635b9fd70092c526d2a751d069285fbf2687efa9e04f500fda1deba7f9aa1",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-letter-z",
+      "text": "Vamos escrever a letra zê. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "04fa0220de1e7388e3992c60310c9566c59b4b60345cf1f60707063ee5454819",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-number-0",
+      "text": "Vamos escrever o número zero. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "83026e87adf4c625abd13890df597c490fe34328d39d65012ac3aff8ea776ca3",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-number-1",
+      "text": "Vamos escrever o número um. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "3fe7d4caea476f931c990872dd8933141da22eba20359ccbda54fefbfe8deddf",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-number-2",
+      "text": "Vamos escrever o número dois. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "0356f5eb976154fad9f3cedf47d1dbb8d381d1415d7e0762701153012dcd9393",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-number-3",
+      "text": "Vamos escrever o número três. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "5ff8f28b9124b659d7a3a0ea36fac28f047cde9f1c19a941835889e6ee9ff3c8",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-number-4",
+      "text": "Vamos escrever o número quatro. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "85efda6645762e21f34e0a1e4b37aba5b5869ab5d8d8154910659dde5b4858e2",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-number-5",
+      "text": "Vamos escrever o número cinco. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "bd43c79924b13b9f0c483e4268722d7b45c4f559161812d07e3da1f5c152ad91",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-number-6",
+      "text": "Vamos escrever o número seis. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "82fc1c7ac905c17bf9ccbc31f687258380f5072b87c36a08c737b2f6355e84fa",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-number-7",
+      "text": "Vamos escrever o número sete. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "3ad89793831784f4b64670f395abfcb270413026a2846b0c2441ffd68c07241f",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-number-8",
+      "text": "Vamos escrever o número oito. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "af0ae93d989b4a2425864d800f50dd53ed800c7e7b8faa196915fd576b4e42fe",
+      "kind": "instruction"
+    },
+    {
+      "id": "prompt-writing-number-9",
+      "text": "Vamos escrever o número nove. Olhe o modelo e desenhe com o dedo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "281b2df8322de15d2146dfdef559ac0de689b05df24ba66c8a6cda1966fd8f97",
+      "kind": "instruction"
+    },
+    {
+      "id": "success-letters-explore-0",
+      "text": "Isso, Olívia! Casa começa com a letra cê.",
+      "model": "eleven_v3",
+      "sha256": "1421b28b3ec53058174c9e0994611960e1e59e1b85441be43f000d43bda0a222",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-explore-1",
+      "text": "Você montou a palavra uva! Muito bem, Olívia!",
+      "model": "eleven_v3",
+      "sha256": "c9248fbc2e82ed1fdc94b2fbd22fb3bd8456a8a56f047517204a8618959d92a1",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-explore-10",
+      "text": "Isso, Olívia! Coco começa com a letra cê.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "ad988530a427654778f0ad48019629bb80bde7bd7289180e53209f6a722bee57",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-explore-11",
+      "text": "Você montou a palavra navio! Muito bem, Olívia!",
+      "model": "eleven_v3",
+      "sha256": "95873ffef27b317297affaf446812b4a7ca46a7165e5cd53bb2984394c3ce59f",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-explore-2",
+      "text": "Isso, Olívia! Dado começa com a letra dê.",
+      "model": "eleven_v3",
+      "sha256": "e7dfc66464b47d17453544f96257b84e5078bf98727fbb830a35022c72d8067c",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-explore-3",
+      "text": "Você montou a palavra fada! Muito bem, Olívia!",
+      "model": "eleven_v3",
+      "sha256": "df8adda1070bfcbeed3052b0c95c7e3ceac0afde9bc5b9c4866a97f79ab32fc7",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-explore-4",
+      "text": "Isso, Olívia! Lupa começa com a letra ele.",
+      "model": "eleven_v3",
+      "sha256": "51af20a57aa779cd0281c56df666094a14538218dac1f0c96fceafdd263698f0",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-explore-5",
+      "text": "Você montou a palavra rosa! Muito bem, Olívia!",
+      "model": "eleven_v3",
+      "sha256": "24b9341877464562e3552c0022474ffa5c406560e6250c117c3d4e17d44c2859",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-explore-6",
+      "text": "Isso, Olívia! Peixe começa com a letra pê.",
+      "model": "eleven_v3",
+      "sha256": "21fa68569c14a5895ea898353f00319451b39659d095af5dde1017c5c4688ae2",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-explore-7",
+      "text": "Você montou a palavra livro! Muito bem, Olívia!",
+      "model": "eleven_v3",
+      "sha256": "f879aa7866c44b4caaba1aa7a350bf684a55a727cdeba582a48f5f343b5766db",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-explore-8",
+      "text": "Isso, Olívia! Pipa começa com a letra pê.",
+      "model": "eleven_v3",
+      "sha256": "df7591ca35c44fac1ae120ae0ab96bb17b0412dfae841c4eabf8ee5e91ae45a5",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-explore-9",
+      "text": "Você montou a palavra panda! Muito bem, Olívia!",
+      "model": "eleven_v3",
+      "sha256": "a4db1aab12d21c36d679a9ed6f515db8be5f47b9e93d8c505b4d3a89d988d6d7",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-start-0",
+      "text": "Isso, Olívia! Sol começa com a letra esse.",
+      "model": "eleven_v3",
+      "sha256": "e6cfea0cd0e1eea3f1c84458fc59eb9abd0296d895aa9dd00691b4acbb69f19c",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-start-1",
+      "text": "Você montou a palavra lua! Muito bem, Olívia!",
+      "model": "eleven_v3",
+      "sha256": "80441f5ab4f52bb9660da7f5341b325dc846cbb18e6e43e9f3c6ef25589854ed",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-start-2",
+      "text": "Isso, Olívia! Bola começa com a letra bê.",
+      "model": "eleven_v3",
+      "sha256": "5c3e297ee93600a373ea229caed8cec502881f80d51e99749b91565e532ecca2",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-start-3",
+      "text": "Você montou a palavra gato! Muito bem, Olívia!",
+      "model": "eleven_v3",
+      "sha256": "b84023973024ae43107520f4866f119664bf8b96f175747aa0ab29f057421aef",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-start-4",
+      "text": "Isso, Olívia! Sapo começa com a letra esse.",
+      "model": "eleven_v3",
+      "sha256": "61a68db7550800a2e114390c06687ff4c48600c12185fd1562307647ab086d28",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-start-5",
+      "text": "Você montou a palavra pato! Muito bem, Olívia!",
+      "model": "eleven_v3",
+      "sha256": "fc39fabe40fbc558a1179877e6cf3dc9eb6a7b3c9c0ab420b120177a9086f0a5",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-start-6",
+      "text": "Isso, Olívia! Mala começa com a letra eme.",
+      "model": "eleven_v3",
+      "sha256": "1d8f3e86c965226eb5634f3c42b57b2404dd4b038f2d42e5566bc9fbfe292d97",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-start-7",
+      "text": "Você montou a palavra vaca! Muito bem, Olívia!",
+      "model": "eleven_v3",
+      "sha256": "fa3940f9b21508cf81d61f5c7de53bb9975da5e485fcf1107fb7feb081bc5351",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-start-8",
+      "text": "Isso, Olívia! Bolo começa com a letra bê.",
+      "model": "eleven_v3",
+      "sha256": "721f47c4990f2bf0eca0ec495cd4549af05ac2d735979c09cbfe0b52973f1b47",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-letters-start-9",
+      "text": "Você montou a palavra foca! Muito bem, Olívia!",
+      "model": "eleven_v3",
+      "sha256": "ce63929c74084e58845d06f951497bcb699233ca24cf2270aea4cb43eb612d64",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-numbers-1",
+      "text": "Isso, Olívia! É um lanchinho. Você contou direitinho!",
+      "model": "eleven_v3",
+      "sha256": "0f27cc2b86ded773598b2a7366ef0f610adf24300e01329c33cc6ed61b5b6463",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-numbers-10",
+      "text": "Isso, Olívia! São dez lanchinhos. Você contou direitinho!",
+      "model": "eleven_v3",
+      "sha256": "be1639558da953eb86989cbdef2653adccf3eb223dc2861cb59c4b0b4a8bbd76",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-numbers-2",
+      "text": "Isso, Olívia! São dois lanchinhos. Você contou direitinho!",
+      "model": "eleven_v3",
+      "sha256": "4fc16c57b7af293915f55a8f64a899d5b6371b348a938c6330c49e17925ed813",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-numbers-3",
+      "text": "Isso, Olívia! São três lanchinhos. Você contou direitinho!",
+      "model": "eleven_v3",
+      "sha256": "dfbee6b871c629bf7753f138011dac47ea56ff6b577a647b8604e3b6eb3dec05",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-numbers-4",
+      "text": "Isso, Olívia! São quatro lanchinhos. Você contou direitinho!",
+      "model": "eleven_v3",
+      "sha256": "c4739af1221b769ccaf8125a72d03272b463041add3554dd547be0ec34db41d4",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-numbers-5",
+      "text": "Isso, Olívia! São cinco lanchinhos. Você contou direitinho!",
+      "model": "eleven_v3",
+      "sha256": "eebab0a8a48756a27b28d11f01f74a6e74bfff97499d339a5a34a7ffe4347c3b",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-numbers-6",
+      "text": "Isso, Olívia! São seis lanchinhos. Você contou direitinho!",
+      "model": "eleven_v3",
+      "sha256": "9340e0a66247e4a9ad35fa64ab4a2ddd5f2e23dd5e21732fd4a48f6ad53c849a",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-numbers-7",
+      "text": "Isso, Olívia! São sete lanchinhos. Você contou direitinho!",
+      "model": "eleven_v3",
+      "sha256": "3547272b5be0918a4c0e7c52cdaefeacc17bab5e70e7743a46786bd281607bd5",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-numbers-8",
+      "text": "Isso, Olívia! São oito lanchinhos. Você contou direitinho!",
+      "model": "eleven_v3",
+      "sha256": "52bc67a2909035cb6468df4f42a4a4ee923b679741818f679dbdc730539e36b5",
+      "kind": "feedback"
+    },
+    {
+      "id": "success-numbers-9",
+      "text": "Isso, Olívia! São nove lanchinhos. Você contou direitinho!",
+      "model": "eleven_v3",
+      "sha256": "0916735bf33560e0b696f7f12c8d6e51567aadc7eeba24d5c58bd0b95307927c",
+      "kind": "feedback"
+    },
+    {
+      "id": "writing-empty",
+      "text": "Passe o dedo no caderno para fazer seu desenho. Depois, toque em conferir.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "139cacff094ee00c37f72d95fcc77ebc0da9227127ad92dc4b5e161b40d91769",
+      "kind": "instruction"
+    },
+    {
+      "id": "writing-incomplete",
+      "text": "Está quase! Veja se falta um pedacinho. Você pode completar o desenho.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "b13451dd850ba19fe6f05552d20ca3c5d9fbaa8e20c295744180523d644a1dac",
+      "kind": "feedback"
+    },
+    {
+      "id": "writing-instruction-0",
+      "text": "Passe o dedo por cima do molde, seguindo os pontinhos. Depois, toque em conferir.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "1f4cf3045e65e31b2d415888224f0743db076a144b463ec25b727c510f763173",
+      "kind": "instruction"
+    },
+    {
+      "id": "writing-instruction-1",
+      "text": "Os pontinhos vão ajudar. Complete a letra ou o número e toque em conferir.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "a59bea7ba4e08a9f1a0c07e17115e69437c71c24ed68d2d4145a59c2c67f134b",
+      "kind": "instruction"
+    },
+    {
+      "id": "writing-instruction-2",
+      "text": "Olhe o modelo. Faça um desenho parecido no espaço em branco e toque em conferir.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "c7d98482c5fcffe4508e81a93cfd4e4d0a8f859e6ba46bdb49779f1cdc7ea8d9",
+      "kind": "instruction"
+    },
+    {
+      "id": "writing-off-track",
+      "text": "Vamos olhar o modelo outra vez? Você pode apagar e tentar de novo, com calma.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "69df1b14470e31ca3a4fcfa8f0612bd73cfd69a4f761b695c7485881f2ebac1b",
+      "kind": "feedback"
+    },
+    {
+      "id": "writing-success",
+      "text": "Que capricho! Seu desenho ficou parecido com o modelo!",
+      "model": "eleven_multilingual_v2",
+      "sha256": "80d728dde37b8d4befbfd1bf8c02b06e736e4801e2c3178bf0e063c5a6e28cd1",
+      "kind": "feedback"
+    },
+    {
+      "id": "writing-too-small",
+      "text": "Vamos fazer um desenho maior? Use o espaço do caderno.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "837485d21286099e4ed556935bffe206dd80951965d3f3997b0ba1fa895caaa6",
+      "kind": "feedback"
+    }
+  ]
+}
