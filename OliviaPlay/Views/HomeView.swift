@@ -19,7 +19,11 @@ struct HomeView: View {
                 case .patterns:
                     PatternGameView(onExit: goHome, onNextAdventure: { open(.writing) })
                 case .writing:
-                    WritingGameView(onExit: goHome, onNextAdventure: { open(.letters) })
+                    WritingGameView(onExit: goHome, onNextAdventure: { open(.drawing) })
+                case .drawing:
+                    DrawingGameView(onExit: goHome, onNextAdventure: { open(.coloring) })
+                case .coloring:
+                    ColoringGameView(onExit: goHome, onNextAdventure: { open(.letters) })
                 }
             } else {
                 catalog
@@ -160,6 +164,8 @@ private struct AdventureCard: View {
         case .memory: return Color(hex: 0x7954A0)
         case .patterns: return Color(hex: 0x327C99)
         case .writing: return Color(hex: 0xB16A31)
+        case .drawing: return Color(hex: 0x9B5291)
+        case .coloring: return Color(hex: 0x317E78)
         }
     }
     private var badge: String {
@@ -169,6 +175,8 @@ private struct AdventureCard: View {
         case .memory: return "PARES"
         case .patterns: return "FORMAS"
         case .writing: return "TRAÇOS"
+        case .drawing: return "CRIAR"
+        case .coloring: return "COLORIR"
         }
     }
     private var title: String {
@@ -178,6 +186,8 @@ private struct AdventureCard: View {
         case .memory: return "Ateliê\nda Memória"
         case .patterns: return "Trem\ndas Formas"
         case .writing: return "Caderno\nMágico"
+        case .drawing: return "Ateliê\nde Desenho"
+        case .coloring: return "Jardim\nde Colorir"
         }
     }
     private var subtitle: String {
@@ -187,9 +197,13 @@ private struct AdventureCard: View {
         case .memory: return "Vire, encontre e lembre."
         case .patterns: return "Qual desenho vem agora?"
         case .writing: return "Letras e números com o dedo."
+        case .drawing: return "Sua imaginação vira desenho."
+        case .coloring: return "Um toque, muitas cores."
         }
     }
     private var progress: String {
+        if game == .drawing { return "Cores e texturas" }
+        if game == .coloring { return "Desenhos para colorir" }
         if game == .memory {
             return "\(memoryPieces) peças para brincar"
         }
@@ -203,6 +217,8 @@ private struct AdventureCard: View {
         case .memory: return "Encontrar figuras iguais em um tabuleiro com \(memoryPieces) peças"
         case .patterns: return "Descobrir desenhos que se repetem e completar o trem"
         case .writing: return "Escrever letras e números com o dedo, com três níveis de ajuda"
+        case .drawing: return "Desenhar livremente com várias cores, texturas e tamanhos de pincel"
+        case .coloring: return "Escolher um desenho e tocar nas partes para preencher com cores e texturas"
         }
     }
 
@@ -213,6 +229,8 @@ private struct AdventureCard: View {
         case .memory: return PlayTheme.lavender
         case .patterns: return Color(hex: 0xD7EDF3)
         case .writing: return Color(hex: 0xF9E8C4)
+        case .drawing: return Color(hex: 0xF2DFF2)
+        case .coloring: return Color(hex: 0xD8F0E8)
         }
     }
 
@@ -230,6 +248,8 @@ private struct AdventureCard: View {
                         case .memory: MemoryRoomIllustration()
                         case .patterns: PatternRoomIllustration()
                         case .writing: WritingRoomIllustration()
+                        case .drawing: DrawingRoomIllustration()
+                        case .coloring: ColoringRoomIllustration()
                         case .letters, .numbers: RoomIllustration(isGarden: game == .letters)
                         }
                     }
@@ -274,6 +294,56 @@ private struct AdventureCard: View {
         .accessibilityHint(accessibilityHint)
         .accessibilityIdentifier("play-\(game.rawValue)")
         .frame(maxWidth: .infinity)
+    }
+}
+
+private struct DrawingRoomIllustration: View {
+    var body: some View {
+        ZStack {
+            Color(hex: 0xF2DFF2)
+            Circle().fill(.white.opacity(0.5)).frame(width: 90).offset(x: 26, y: -35)
+            RoundedRectangle(cornerRadius: 10).fill(.white)
+                .frame(width: 69, height: 81).rotationEffect(.degrees(-7))
+            Path { path in
+                path.move(to: CGPoint(x: 14, y: 59))
+                path.addCurve(to: CGPoint(x: 73, y: 47),
+                              control1: CGPoint(x: 29, y: 14), control2: CGPoint(x: 42, y: 89))
+            }.stroke(Color(hex: 0x9B5291), style: StrokeStyle(lineWidth: 6, lineCap: .round))
+            HStack(spacing: 4) {
+                ForEach([0xE8749F, 0xF2BC5C, 0x61ACA1], id: \.self) { hex in
+                    Circle().fill(Color(hex: UInt32(hex))).frame(width: 12, height: 12)
+                }
+            }.offset(x: -3, y: 29)
+            Image(systemName: "paintbrush.pointed.fill")
+                .font(.system(size: 37)).foregroundStyle(Color(hex: 0x9B5291))
+                .rotationEffect(.degrees(28)).offset(x: 28, y: 12)
+            Image(systemName: "sparkle").font(.system(size: 18))
+                .foregroundStyle(Color(hex: 0xD09E3E)).offset(x: -30, y: -35)
+        }.clipped().accessibilityHidden(true)
+    }
+}
+
+private struct ColoringRoomIllustration: View {
+    var body: some View {
+        ZStack {
+            Color(hex: 0xD8F0E8)
+            Circle().fill(.white.opacity(0.5)).frame(width: 90).offset(x: 25, y: -35)
+            RoundedRectangle(cornerRadius: 11).fill(.white)
+                .frame(width: 73, height: 86).rotationEffect(.degrees(6))
+            Capsule().fill(Color(hex: 0x459B78)).frame(width: 5, height: 36).offset(y: 24)
+            Ellipse().fill(Color(hex: 0x87C6A1)).frame(width: 25, height: 13)
+                .rotationEffect(.degrees(-28)).offset(x: 12, y: 24)
+            ForEach(0..<5) { index in
+                Ellipse().fill(index.isMultiple(of: 2) ? Color(hex: 0xF69CBA) : Color(hex: 0xE8B3D6))
+                    .overlay(Ellipse().stroke(Color(hex: 0x9B5291).opacity(0.35), lineWidth: 1.5))
+                    .frame(width: 22, height: 31).offset(y: -16)
+                    .rotationEffect(.degrees(Double(index) * 72)).offset(y: -12)
+            }
+            Circle().fill(Color(hex: 0xF2C867)).frame(width: 23, height: 23).offset(y: -12)
+            Image(systemName: "paintpalette.fill")
+                .font(.system(size: 26)).foregroundStyle(Color(hex: 0x317E78))
+                .offset(x: -25, y: 31)
+        }.clipped().accessibilityHidden(true)
     }
 }
 

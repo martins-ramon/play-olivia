@@ -103,6 +103,10 @@ public enum NarrationCatalog {
             text = "O trem ficou completo! Você descobriu os desenhos que se repetem. Parabéns, Olívia! Quer escolher outra aventura?"
         case .writing:
             text = "Seu caderno ficou cheio de descobertas! Você escreveu letras e números. Parabéns, Olívia! Vamos brincar mais?"
+        case .drawing:
+            text = "Você criou um desenho cheio de imaginação! Vamos brincar de colorir?"
+        case .coloring:
+            text = "Suas cores deixaram o jardim cheio de vida! Vamos escolher outra aventura?"
         }
         return NarrationCue(id: "completed-\(game.rawValue)", text: text, kind: .feedback)
     }
@@ -194,13 +198,23 @@ public enum NarrationCatalog {
         }
     }
 
-    /// Enumerates every reachable cue without duplicate recordings.
+    public static let drawingIntro = NarrationCue(
+        id: "drawing-intro",
+        text: "Vamos desenhar! Escolha uma cor, uma textura e o tamanho do traço. Passe o dedo ou o lápis na folha. Use a borracha para apagar e desfazer para voltar um passo.",
+        kind: .instruction)
+
+    public static let coloringIntro = NarrationCue(
+        id: "coloring-intro",
+        text: "Vamos colorir! Escolha um desenho, uma cor e uma textura. Depois, toque na parte que você quer pintar. Pode inventar do seu jeitinho!",
+        kind: .instruction)
+
+    /// Enumerates bundled recordings for all seven games.
     public static let allCues: [NarrationCue] = {
         let letters = LearningLevel.allCases.flatMap { LearningCurriculum.letterChallenges(level: $0) }
         let numbers = LearningLevel.allCases.flatMap { LearningCurriculum.mathChallenges(level: $0) }
         let usedLetters = Set(letters.flatMap { $0.choices + $0.word.map(String.init) }).sorted()
         var cues = [letterRetry, mathRetry, continuePrompt(isLastRound: false), continuePrompt(isLastRound: true)]
-        cues += GameKind.allCases.map(completed)
+        cues += GameKind.allCases.filter { !$0.isCreative }.map(completed)
         cues += usedLetters.flatMap { [letterName($0), letterHint($0)] }
         cues += letters.flatMap { [letterPrompt($0), letterSuccess($0)] }
         cues += numbers.flatMap { [mathPrompt($0), mathSuccess($0.answer), mathHint($0.answer)] }
@@ -211,6 +225,7 @@ public enum NarrationCatalog {
         cues += WritingLevel.allCases.map(writingInstruction)
         cues += WritingCurriculum.allGlyphs.map(writingPrompt)
         cues += [writingSuccess, writingEmpty, writingTooSmall, writingIncomplete, writingOffTrack]
+        cues += [drawingIntro, coloringIntro]
         cues += [6, 8, 10, 12, 14, 16].flatMap {
             [memoryIntro(pieceCount: $0), memoryCompleted(pieceCount: $0, nextPieceCount: min($0 + 2, 16))]
         }

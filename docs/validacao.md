@@ -78,3 +78,28 @@ As interações e imagens acima foram verificadas na prévia Mac; instalação e
 - Build para iPad Simulator e prévia Mac passaram. Versão 1.4, build 5, compilada, assinada e instalada no iPad da Olívia. A primeira tentativa de abertura foi recusada exclusivamente porque o iPad estava bloqueado. Após o usuário desbloqueá-lo, o lançamento foi confirmado pelo Xcode; nenhuma nova confirmação de confiança foi solicitada. Assinatura verificada e hashes dos 194 MP3 do pacote conferidos. Logs em `build/writing/`.
 
 A avaliação foi validada com traços de teste e modelos vetoriais. O ajuste fino da tolerância para os traços reais da Olívia e o uso por toque/Pencil precisam ser observados no aparelho. Desenhos e fotos da criança não foram enviados a serviços externos para avaliar a escrita.
+
+## Desenhar e colorir — versão 1.5
+
+Atualização instalada em 17/10/2026.
+
+- Dois jogos adicionados ao catálogo: Ateliê de Desenho e Jardim de Colorir. Ambos oferecem 11 cores, cinco texturas, borracha, desfazer/refazer, limpeza com confirmação e salvamento local. Desenho tem três espessuras; colorir tem quatro páginas (jardim, borboleta, casinha e mar), com preenchimento contido nas regiões e histórico independente por página.
+- 56 testes passaram sem falhas, incluindo persistência das duas atividades, preservação das configurações dos traços, desfazer/refazer e ramificações do histórico, limites de entrada, rejeição de dados inválidos e exclusão das atividades criativas da pontuação.
+- Layouts em retrato e paisagem renderizados e inspecionados no Mac, com amostras de todas as texturas, borracha e quatro páginas preenchidas. Ajustados o espaçamento do desenho e os botões do painel de colorir. Prévias em `output/previews/drawing-*.png` e `output/previews/coloring-*.png`.
+- Builds para iPad Simulator e iPad físico concluídos. O pacote 1.5/build 6 inclui os símbolos dos novos jogos e os 194 áudios anteriores, com hashes conferidos contra o manifesto. As orientações das atividades de arte usam a voz pt-BR do sistema.
+- Assinatura verificada com `codesign --verify --deep --strict` fora do sandbox. Instalação sobre `br.com.oliviaplay.app`, sem desinstalar o aplicativo anterior. `devicectl` confirmou versão 1.5/build 6 instalada e abertura no iPad da Olívia (iPadOS 26.6.1); consulta posterior confirmou o processo em execução, PID 3663.
+- O perfil existente não foi renovado automaticamente: expira em **18/10/2026 às 14:36:31, America/Sao_Paulo**. O iPad da Olívia está incluído nesse perfil.
+- Registros: `build/art-ipad-build.log`, `build/art-ipad-install.json`, `build/art-ipad-launch.json`, `build/art-ipad-app.json` e `build/art-ipad-processes.json`.
+
+A instalação e abertura foram confirmadas no iPad físico. As verificações de desenho, texturas e layout foram realizadas com testes do núcleo e prévias renderizadas no Mac; uso contínuo com dedo/Pencil, áudio e rotação devem ser observados no aparelho.
+
+## Narração das atividades de arte — versão 1.5.1
+
+Preparação em 17/10/2026. As instruções de desenho e colorir passaram da síntese do aparelho para MP3 incluídos no aplicativo, usando a mesma voz Serene, idioma português, velocidade 0,94 e modelo `eleven_multilingual_v2` das gravações de memória, formas e escrita.
+
+- `drawing-intro` e `coloring-intro` entraram no catálogo central; as telas usam essas referências tanto ao entrar quanto ao repetir pelo alto-falante. A validação agora exige 196 gravações, incluindo as duas novas.
+- Preparação com o mesmo pipeline: silêncio aparado somente nas pontas, mono, 44,1 kHz, 128 kbps, alvo de −18 LUFS e pico verdadeiro de −2 dB. Medições dos MP3 finais: desenho −19,13 LUFS / −2,43 dBTP; colorir −18,28 LUFS / −2,17 dBTP. Valores próximos das referências de escrita (−18,93 LUFS) e formas (−18,25 LUFS).
+- Transcrição local das duas gravações corresponde a todas as palavras dos textos esperados, com diferenças apenas de pontuação. Durações: desenho 12,39 s; colorir 11,17 s. Esta conferência automatizada não substitui avaliação auditiva no iPad.
+- 57 testes passaram, build para iPad Simulator concluído e AVAudioPlayer carregou/preparou os 196 MP3. As 194 gravações anteriores foram preservadas; os hashes dos dois novos arquivos no pacote para iPad correspondem ao manifesto.
+- Relatórios: `build/art-narration-check.log`, `build/art-narration-player.log`, `build/narration/art-transcripts.json` e `build/narration/art-loudness.json`.
+- Versão 1.5.1/build 7 compilada, assinada, instalada e aberta no iPad da Olívia em 17/10/2026. `codesign --verify --deep --strict` passou; consulta no aparelho confirmou a versão instalada e o processo em execução (PID 3680). Registros: `build/art-narration-ipad-deploy.log`, `build/art-narration-ipad-app.json` e `build/art-narration-ipad-processes.json`. O perfil mantém a expiração de 18/10/2026 às 14:36:31, America/Sao_Paulo.

@@ -84,6 +84,54 @@ struct RenderPreviews {
         try render(WritingGlyphSheet(), model: model, width: 1080, height: 1280,
                    to: output.appendingPathComponent("writing-all-glyphs.png"))
 
+        try render(DrawingGameView(onExit: {}, onNextAdventure: {}, previewDrawing: ArtDrawing()), model: model,
+                   width: 1080, height: 810, to: output.appendingPathComponent("drawing-landscape.png"))
+        try render(DrawingGameView(onExit: {}, onNextAdventure: {}, previewDrawing: ArtDrawing()), model: model,
+                   width: 810, height: 1080, to: output.appendingPathComponent("drawing-portrait.png"))
+        try render(ColoringGameView(onExit: {}, onNextAdventure: {}, previewColoring: ArtColoring()), model: model,
+                   width: 1080, height: 810, to: output.appendingPathComponent("coloring-landscape.png"))
+        try render(ColoringGameView(onExit: {}, onNextAdventure: {}, previewColoring: ArtColoring()), model: model,
+                   width: 810, height: 1080, to: output.appendingPathComponent("coloring-portrait.png"))
+
+        // Art previews never read or write the device's saved artwork.
+        var drawing = ArtDrawing()
+        let sampleColors: [ArtColor] = [.purple, .pink, .mint, .orange, .blue]
+        for (index, texture) in ArtTexture.allCases.enumerated() {
+            let points = (0...90).map { step in
+                let x = 0.12 + Double(step) / 90 * 0.76
+                return ArtPoint(x: x, y: 0.16 + Double(index) * 0.17 + sin(x * 13) * 0.035)
+            }
+            drawing.append(ArtStroke(points: points, color: sampleColors[index], texture: texture, width: 0.075))
+        }
+        drawing.append(ArtStroke(points: [ArtPoint(x: 0.52, y: 0.08), ArtPoint(x: 0.52, y: 0.92)],
+                                 color: .white, texture: .smooth, width: 0.025, isEraser: true))
+        try render(DrawingGameView(onExit: {}, onNextAdventure: {}, previewDrawing: drawing), model: model,
+                   width: 1080, height: 810, to: output.appendingPathComponent("drawing-textures-landscape.png"))
+        try render(DrawingGameView(onExit: {}, onNextAdventure: {}, previewDrawing: drawing), model: model,
+                   width: 810, height: 1080, to: output.appendingPathComponent("drawing-textures-portrait.png"))
+
+        var coloring = ArtColoring()
+        let sampleRegions: [(String, [String])] = [
+            ("garden", ["sky", "sun", "cloud", "hill", "stem-left", "leaf-left", "stem-right", "leaf-right",
+                        "flower-left", "center-left", "flower-right", "center-right", "stone"]),
+            ("butterfly", ["sky", "wing-upper-left", "wing-upper-right", "wing-lower-left", "wing-lower-right",
+                           "spot-upper-left", "spot-upper-right", "spot-lower-left", "spot-lower-right", "body", "head"]),
+            ("house", ["sky", "cloud", "sun", "grass", "wall", "chimney", "roof", "door", "window-left",
+                       "window-right", "path", "bush-left", "bush-right"]),
+            ("ocean", ["water", "sand", "seaweed-left", "seaweed-right", "tail", "fin-top", "fin-bottom",
+                       "fish", "fin", "bubble-large", "bubble-small", "starfish", "shell"])
+        ]
+        for (page, regions) in sampleRegions {
+            for (index, region) in regions.enumerated() {
+                coloring.paint(ArtPaint(color: ArtColor.allCases[index % ArtColor.allCases.count],
+                                        texture: ArtTexture.allCases[index % ArtTexture.allCases.count]),
+                               region: region, page: page)
+            }
+            try render(ColoringGameView(onExit: {}, onNextAdventure: {}, previewColoring: coloring, previewPage: page),
+                       model: model, width: 1080, height: 810,
+                       to: output.appendingPathComponent("coloring-\(page)-painted-landscape.png"))
+        }
+
         // Longest composition and largest addition use only this disposable profile.
         model.setLevel(.explore, for: .letters)
         model.finishSession(SessionSummary(id: UUID(), game: .letters, level: .explore,

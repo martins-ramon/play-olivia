@@ -54,7 +54,7 @@ struct ParentAreaView: View {
         VStack(alignment: .leading, spacing: 25) {
             VStack(alignment: .leading, spacing: 7) {
                 Text("No ritmo da Olívia").font(PlayTheme.font(28, .heavy)).foregroundStyle(PlayTheme.ink)
-                Text("Cinco desafios nas aventuras de letras, números, formas e escrita. Na memória, um tabuleiro de cada vez. Sem cronômetro, sem perder vidas e com novas tentativas sempre disponíveis.")
+                Text("Cinco desafios nas aventuras de letras, números, formas e escrita. Na memória, um tabuleiro de cada vez. Desenho e colorir são espaços de criação livre. Sem cronômetro, sem perder vidas e com novas tentativas sempre disponíveis.")
                     .font(PlayTheme.font(16, .medium)).foregroundStyle(PlayTheme.muted)
             }
 
@@ -66,7 +66,7 @@ struct ParentAreaView: View {
             Toggle(isOn: $app.soundEnabled) {
                 Label("Narração em português", systemImage: "speaker.wave.2.fill").font(PlayTheme.font(17))
             }
-            Text("Use os botões de alto-falante para repetir uma instrução. As falas gravadas também funcionam sem conexão.")
+            Text("Use os botões de alto-falante para repetir uma instrução. Todos os jogos têm falas gravadas em português, que funcionam sem conexão.")
                 .font(PlayTheme.font(13, .medium)).foregroundStyle(PlayTheme.muted)
 
             levelPicker(for: .letters, title: "Jardim das Letras", intro: LearningLevel.start.description(for: .letters), explore: LearningLevel.explore.description(for: .letters))
@@ -74,11 +74,12 @@ struct ParentAreaView: View {
             memoryProgress
             patternProgress
             writingProgress
+            creativeActivities
 
             VStack(alignment: .leading, spacing: 10) {
                 Label("Uma brincadeira só dela", systemImage: "heart.fill").font(PlayTheme.font(18))
-                Text("O app funciona sem cadastro, anúncios, compras ou conexão. O progresso fica apenas neste aparelho. A heroína foi criada a partir das fotos fornecidas; as fotografias originais não fazem parte do aplicativo.")
-                Text("Atividades de leitura, escrita, matemática, memória e raciocínio para brincar em família. Não representam o currículo oficial da Maple Bear nem substituem o acompanhamento da escola.")
+                Text("O app funciona sem cadastro, anúncios, compras ou conexão. O progresso e as criações ficam apenas neste aparelho. A heroína foi criada a partir das fotos fornecidas; as fotografias originais não fazem parte do aplicativo.")
+                Text("Atividades de leitura, escrita, matemática, memória, raciocínio e artes para brincar em família. Não representam o currículo oficial da Maple Bear nem substituem o acompanhamento da escola.")
             }.font(PlayTheme.font(14, .medium)).foregroundStyle(PlayTheme.muted)
                 .padding(20).background(.white, in: RoundedRectangle(cornerRadius: 22))
 
@@ -127,6 +128,19 @@ struct ParentAreaView: View {
             Text("Começa desenhando sobre o molde, passa por pistas e chega a copiar o modelo ao lado. A Olívia também pode escolher a ajuda dentro do jogo; o progresso de cada nível fica salvo.")
                 .font(PlayTheme.font(14, .medium)).foregroundStyle(PlayTheme.muted)
             Text("A comparação acontece no aparelho e considera a proximidade e a completude do traçado em relação ao modelo, sem exigir uma ordem dos traços. Ao copiar, aceita variações de tamanho e posição. É uma orientação para brincar, não uma nota de caligrafia: outros jeitos válidos de escrever podem pedir uma nova tentativa.")
+                .font(PlayTheme.font(13, .medium)).foregroundStyle(PlayTheme.muted)
+        }.padding(20).background(.white, in: RoundedRectangle(cornerRadius: 22))
+    }
+
+    private var creativeActivities: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Label("Desenhar e colorir", systemImage: "paintpalette.fill")
+                .font(PlayTheme.font(20)).foregroundStyle(PlayTheme.ink)
+            Text("No Ateliê de Desenho, Olívia cria com o dedo ou Apple Pencil. No Jardim de Colorir, escolhe um desenho e toca nas partes para preenchê-las. Os dois espaços oferecem várias cores e texturas para experimentar à vontade.")
+                .font(PlayTheme.font(14, .medium)).foregroundStyle(PlayTheme.muted)
+            Text("As criações são salvas automaticamente neste aparelho. Ela pode desfazer, refazer, usar a borracha ou limpar com confirmação. Não há avaliação, níveis ou estrelas nas atividades de arte.")
+                .font(PlayTheme.font(14, .medium)).foregroundStyle(PlayTheme.muted)
+            Text("Recomeçar o potinho de estrelas preserva os desenhos. Para apagar uma criação, use o botão de limpar dentro do jogo.")
                 .font(PlayTheme.font(13, .medium)).foregroundStyle(PlayTheme.muted)
         }.padding(20).background(.white, in: RoundedRectangle(cornerRadius: 22))
     }

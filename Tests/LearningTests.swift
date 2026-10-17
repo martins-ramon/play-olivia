@@ -166,6 +166,21 @@ final class LearningTests: XCTestCase {
         XCTAssertFalse(profile.record(incomplete))
     }
 
+    func testCreativeActivitiesDoNotReceiveQuizStarsOrLevels() {
+        var profile = LearningProfile()
+        for game in [GameKind.drawing, .coloring] {
+            let summary = SessionSummary(id: UUID(), game: game, level: .start,
+                                         completedRounds: 5, totalRounds: 5, completedAt: Date(), nextCursor: 5)
+            XCTAssertFalse(profile.record(summary))
+            profile.setLevel(.explore, for: game)
+            XCTAssertEqual(profile.level(for: game), .start)
+            XCTAssertEqual(profile.cursor(for: game), 0)
+            XCTAssertEqual(profile.sessionCount(for: game), 0)
+        }
+        XCTAssertEqual(profile.totalStars, 0)
+        XCTAssertEqual(profile.completedSessionCount, 0)
+    }
+
     func testProgressStoreRoundTripAndCorruptDataRecovery() throws {
         let suite = "OliviaLearningTests.\(UUID().uuidString)"
         let defaults = try XCTUnwrap(UserDefaults(suiteName: suite))

@@ -6,6 +6,13 @@
   "speed": 0.94,
   "clips": [
     {
+      "id": "coloring-intro",
+      "text": "Vamos colorir! Escolha um desenho, uma cor e uma textura. Depois, toque na parte que você quer pintar. Pode inventar do seu jeitinho!",
+      "model": "eleven_multilingual_v2",
+      "sha256": "976aec6173f8d6bbab64aa9f8aa7cfd26c0eca70f0bbff58ef45d9e45ef4b7ff",
+      "kind": "instruction"
+    },
+    {
       "id": "completed-letters",
       "text": "O jardim floresceu! Você brincou com letras e montou palavras. Parabéns, Olívia! Quer escolher outra aventura?",
       "model": "eleven_v3",
@@ -52,6 +59,13 @@
       "text": "Você conseguiu! Toque em ver minha conquista para descobrir sua surpresa.",
       "model": "eleven_v3",
       "sha256": "781fa0b01d5fdf9df4de150a9df1e7d90f4711d5a695073cd920dc28ccd5c08f",
+      "kind": "instruction"
+    },
+    {
+      "id": "drawing-intro",
+      "text": "Vamos desenhar! Escolha uma cor, uma textura e o tamanho do traço. Passe o dedo ou o lápis na folha. Use a borracha para apagar e desfazer para voltar um passo.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "e59432bd1f7b472041fff9f52e408f4ac994dd654749bdeec795c4eec2084e31",
       "kind": "instruction"
     },
     {

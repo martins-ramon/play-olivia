@@ -56,6 +56,16 @@
 			"path" = "App";
 			"sourceTree" = "<group>";
 		};
+		"D72EE9E6843475196355AAC8" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "ArtGame.swift";
+			"sourceTree" = "<group>";
+		};
+		"D28A434501BEB3B4AF16E1CD" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D72EE9E6843475196355AAC8";
+		};
 		"AB043D0B3A53C4621DF3F76E" = {
 			"isa" = "PBXFileReference";
 			"lastKnownFileType" = "sourcecode.swift";
@@ -139,6 +149,7 @@
 		"DD367AD4EF418859BED7E420" = {
 			"isa" = "PBXGroup";
 			"children" = (
+				"D72EE9E6843475196355AAC8",
 				"AB043D0B3A53C4621DF3F76E",
 				"4E0C46BFED9DE7B5965F9912",
 				"C3C68884B0C421384CD077FD",
@@ -160,6 +171,16 @@
 		"67C5622FF500881FFD67F315" = {
 			"isa" = "PBXBuildFile";
 			"fileRef" = "8A2B296710C43575126DA464";
+		};
+		"38BAD540A76E651EC9107284" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "coloring-intro.mp3";
+			"sourceTree" = "<group>";
+		};
+		"B41CA139B51DB4A3A57BE1D1" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "38BAD540A76E651EC9107284";
 		};
 		"7F700B0B9C3F51C48D68759D" = {
 			"isa" = "PBXFileReference";
@@ -230,6 +251,16 @@
 		"CDF61271AE99BEAFC16A2A78" = {
 			"isa" = "PBXBuildFile";
 			"fileRef" = "66F483EC65943A354224B8F3";
+		};
+		"AFFBD01E50D85662069C14B7" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "drawing-intro.mp3";
+			"sourceTree" = "<group>";
+		};
+		"D441F77E7F6D6EDC49ED7ACD" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "AFFBD01E50D85662069C14B7";
 		};
 		"5A868663BED2D4A02FD00DBC" = {
 			"isa" = "PBXFileReference";
@@ -2114,6 +2145,7 @@
 		"3FC3C959EAEF72959069C00F" = {
 			"isa" = "PBXGroup";
 			"children" = (
+				"38BAD540A76E651EC9107284",
 				"7F700B0B9C3F51C48D68759D",
 				"14359C38E582A46EB1F65E15",
 				"358C6755CAA8CB53DD66B60A",
@@ -2121,6 +2153,7 @@
 				"4C6E4C3735759232F1ED0F9C",
 				"5DF85E0015F83604B18E5687",
 				"66F483EC65943A354224B8F3",
+				"AFFBD01E50D85662069C14B7",
 				"5A868663BED2D4A02FD00DBC",
 				"86FC0AF69856099F5720B5BD",
 				"1BCF8B283F8491899BAE4F1F",
@@ -2322,6 +2355,36 @@
 			"path" = "Resources";
 			"sourceTree" = "<group>";
 		};
+		"122C496AE010C63FA80A838C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "ArtComponents.swift";
+			"sourceTree" = "<group>";
+		};
+		"91E0DCB8F5172968284F1DEE" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "122C496AE010C63FA80A838C";
+		};
+		"6A927A45B56AE7E425536206" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "ColoringGameView.swift";
+			"sourceTree" = "<group>";
+		};
+		"83B4104960315E47C1F6E9E6" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "6A927A45B56AE7E425536206";
+		};
+		"2D81D19E875970B8E3E94A66" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "DrawingGameView.swift";
+			"sourceTree" = "<group>";
+		};
+		"53EFF510BF432C2D92879C24" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2D81D19E875970B8E3E94A66";
+		};
 		"29F49282D28EB502B6847F9B" = {
 			"isa" = "PBXFileReference";
 			"lastKnownFileType" = "sourcecode.swift";
@@ -2395,6 +2458,9 @@
 		"AF0947F373892BB6EB4D20B0" = {
 			"isa" = "PBXGroup";
 			"children" = (
+				"122C496AE010C63FA80A838C",
+				"6A927A45B56AE7E425536206",
+				"2D81D19E875970B8E3E94A66",
 				"29F49282D28EB502B6847F9B",
 				"D7C52D0F7AB5216ACCF805CC",
 				"85FFA64DBE1C08F40E05DC8F",
@@ -2518,6 +2584,7 @@
 				"8DABF4D8EE9D86BFF27DFC69",
 				"1561526D3BACEE071866DD05",
 				"06F85772E349730DF565B562",
+				"D28A434501BEB3B4AF16E1CD",
 				"A66223E1C9F062405B951BD9",
 				"F758A5AF9FF461CB782E8DDF",
 				"4C11E813680BC239518FEF64",
@@ -2526,6 +2593,9 @@
 				"5F4B87478722F4B6767C2BAA",
 				"C7E7CAB7ABB561F26CD07C16",
 				"CA97433A97E075360D01C9EC",
+				"91E0DCB8F5172968284F1DEE",
+				"83B4104960315E47C1F6E9E6",
+				"53EFF510BF432C2D92879C24",
 				"4D933E0A5ADFCB4F23ED9DB9",
 				"0F2F5C22271EBBCE3660A32C",
 				"B8A52B56D8DDB82054AE6942",
@@ -2546,6 +2616,7 @@
 			"buildActionMask" = "2147483647";
 			"files" = (
 				"67C5622FF500881FFD67F315",
+				"B41CA139B51DB4A3A57BE1D1",
 				"1C5E2758D02EB0E77B310594",
 				"CB5C75C6EE9A326576EF3B40",
 				"7463FC7052D8D683557184DD",
@@ -2553,6 +2624,7 @@
 				"79E9416820322C8CB56FE755",
 				"0622B59AFD858CA41D78A7EE",
 				"CDF61271AE99BEAFC16A2A78",
+				"D441F77E7F6D6EDC49ED7ACD",
 				"A436561423D363E1B252AD58",
 				"FFA484EA01FBA1FFE4A07EF0",
 				"25623BE24F306A78E68F6B64",
@@ -2775,14 +2847,14 @@
 			"buildSettings" = {
 				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
 				"CODE_SIGN_STYLE" = "Automatic";
-				"CURRENT_PROJECT_VERSION" = "5";
+				"CURRENT_PROJECT_VERSION" = "7";
 				"GENERATE_INFOPLIST_FILE" = "NO";
 				"INFOPLIST_FILE" = "OliviaPlay/Info.plist";
 				"LD_RUNPATH_SEARCH_PATHS" = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				"MARKETING_VERSION" = "1.4";
+				"MARKETING_VERSION" = "1.5.1";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "br.com.oliviaplay.app";
 				"PRODUCT_NAME" = "$(TARGET_NAME)";
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
@@ -2818,14 +2890,14 @@
 			"buildSettings" = {
 				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
 				"CODE_SIGN_STYLE" = "Automatic";
-				"CURRENT_PROJECT_VERSION" = "5";
+				"CURRENT_PROJECT_VERSION" = "7";
 				"GENERATE_INFOPLIST_FILE" = "NO";
 				"INFOPLIST_FILE" = "OliviaPlay/Info.plist";
 				"LD_RUNPATH_SEARCH_PATHS" = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				"MARKETING_VERSION" = "1.4";
+				"MARKETING_VERSION" = "1.5.1";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "br.com.oliviaplay.app";
 				"PRODUCT_NAME" = "$(TARGET_NAME)";
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";

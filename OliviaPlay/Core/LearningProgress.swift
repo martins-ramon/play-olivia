@@ -34,6 +34,7 @@ public struct LearningProfile: Codable, Equatable {
         switch game {
         case .memory: return memoryCompletedRounds
         case .writing: return completedWritingSessions.count
+        case .drawing, .coloring: return 0
         default: return completedSessions.filter { $0.game == game }.count
         }
     }
@@ -45,6 +46,7 @@ public struct LearningProfile: Codable, Equatable {
         case .memory: return memoryPieceCount == 6 ? .start : .explore
         case .patterns: return .start
         case .writing: return .start
+        case .drawing, .coloring: return .start
         }
     }
 
@@ -55,6 +57,7 @@ public struct LearningProfile: Codable, Equatable {
         case .memory: return memoryCompletedRounds
         case .patterns: return patternCursor
         case .writing: return writingCursor(for: writingLevel)
+        case .drawing, .coloring: return 0
         }
     }
 
@@ -78,12 +81,15 @@ public struct LearningProfile: Codable, Equatable {
         case .writing:
             // Writing has its own three levels and a separate deck per level.
             break
+        case .drawing, .coloring:
+            // Creative activities keep artwork instead of levels or deck cursors.
+            break
         }
     }
 
     @discardableResult
     public mutating func record(_ summary: SessionSummary) -> Bool {
-        guard summary.game != .memory, summary.game != .writing,
+        guard summary.game != .memory, summary.game != .writing, !summary.game.isCreative,
               summary.totalRounds == LearningCurriculum.roundsPerSession,
               summary.completedRounds == summary.totalRounds,
               summary.nextCursor >= 0,
@@ -97,6 +103,7 @@ public struct LearningProfile: Codable, Equatable {
             case .memory: break
             case .patterns: patternCursor = max(patternCursor, summary.nextCursor)
             case .writing: break
+            case .drawing, .coloring: break
             }
         }
         return true

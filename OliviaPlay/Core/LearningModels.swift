@@ -6,8 +6,12 @@ public enum GameKind: String, Codable, CaseIterable, Identifiable {
     case memory
     case patterns
     case writing
+    case drawing
+    case coloring
 
     public var id: String { rawValue }
+    /// Creative play has a saved canvas, with no scored rounds or levels.
+    public var isCreative: Bool { self == .drawing || self == .coloring }
     public var title: String {
         switch self {
         case .letters: return "Jardim das Letras"
@@ -15,6 +19,8 @@ public enum GameKind: String, Codable, CaseIterable, Identifiable {
         case .memory: return "Ateliê da Memória"
         case .patterns: return "Trem das Formas"
         case .writing: return "Caderno Mágico"
+        case .drawing: return "Ateliê de Desenho"
+        case .coloring: return "Jardim de Colorir"
         }
     }
 }
@@ -40,6 +46,8 @@ public enum LearningLevel: String, Codable, CaseIterable, Identifiable {
         case (_, .memory): return "Encontrar pares, começando com 6 peças e chegando a 16."
         case (_, .patterns): return "Descobrir formas que se repetem e completar o trem."
         case (_, .writing): return "Desenhar letras e números, do molde à escrita com um modelo ao lado."
+        case (_, .drawing): return "Criar desenhos livres com cores, texturas e pincéis."
+        case (_, .coloring): return "Preencher desenhos com as cores e texturas que imaginar."
         }
     }
 }

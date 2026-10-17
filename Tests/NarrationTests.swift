@@ -34,7 +34,7 @@ final class NarrationTests: XCTestCase {
         assertCovered(NarrationCatalog.mathRetry)
         assertCovered(NarrationCatalog.continuePrompt(isLastRound: false))
         assertCovered(NarrationCatalog.continuePrompt(isLastRound: true))
-        for game in GameKind.allCases { assertCovered(NarrationCatalog.completed(game)) }
+        for game in GameKind.allCases where !game.isCreative { assertCovered(NarrationCatalog.completed(game)) }
     }
 
     func testMemoryNarrationCoversEveryBoardSizeAndOutcome() {
@@ -95,6 +95,21 @@ final class NarrationTests: XCTestCase {
         XCTAssertTrue(NarrationCatalog.mathSuccess(1).text.contains("É um lanchinho"))
         XCTAssertTrue(NarrationCatalog.mathSuccess(2).text.contains("São dois lanchinhos"))
         XCTAssertTrue(NarrationCatalog.mathHint(10).text.contains("nove, dez"))
+    }
+
+    func testCreativeInstructionsHaveProductionRecordings() {
+        let drawing = NarrationCatalog.drawingIntro
+        let coloring = NarrationCatalog.coloringIntro
+        assertCovered(drawing)
+        assertCovered(coloring)
+        XCTAssertEqual(drawing.id, "drawing-intro")
+        XCTAssertEqual(coloring.id, "coloring-intro")
+        XCTAssertEqual(drawing.kind, .instruction)
+        XCTAssertEqual(coloring.kind, .instruction)
+        XCTAssertEqual(drawing.text, "Vamos desenhar! Escolha uma cor, uma textura e o tamanho do traço. Passe o dedo ou o lápis na folha. Use a borracha para apagar e desfazer para voltar um passo.")
+        XCTAssertEqual(coloring.text, "Vamos colorir! Escolha um desenho, uma cor e uma textura. Depois, toque na parte que você quer pintar. Pode inventar do seu jeitinho!")
+        XCTAssertNil(catalogue[NarrationCatalog.completed(.drawing).id])
+        XCTAssertNil(catalogue[NarrationCatalog.completed(.coloring).id])
     }
 
     func testCatalogueCanBeExportedWithUniqueSafeStableIdentifiers() throws {

@@ -132,11 +132,11 @@ def main() -> None:
         target_settings = {
             "ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
             "CODE_SIGN_STYLE": "Automatic",
-            "CURRENT_PROJECT_VERSION": "5",
+            "CURRENT_PROJECT_VERSION": "7",
             "GENERATE_INFOPLIST_FILE": "NO",
             "INFOPLIST_FILE": "OliviaPlay/Info.plist",
             "LD_RUNPATH_SEARCH_PATHS": ["$(inherited)", "@executable_path/Frameworks"],
-            "MARKETING_VERSION": "1.4",
+            "MARKETING_VERSION": "1.5.1",
             "PRODUCT_BUNDLE_IDENTIFIER": "br.com.oliviaplay.app",
             "PRODUCT_NAME": "$(TARGET_NAME)",
             "SUPPORTED_PLATFORMS": "iphoneos iphonesimulator",
