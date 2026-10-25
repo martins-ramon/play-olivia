@@ -8,10 +8,11 @@ public enum GameKind: String, Codable, CaseIterable, Identifiable {
     case writing
     case drawing
     case coloring
+    case dressUp
 
     public var id: String { rawValue }
-    /// Creative play has a saved canvas, with no scored rounds or levels.
-    public var isCreative: Bool { self == .drawing || self == .coloring }
+    /// Creative play keeps its own creations, without academic rounds or levels.
+    public var isCreative: Bool { self == .drawing || self == .coloring || self == .dressUp }
     public var title: String {
         switch self {
         case .letters: return "Jardim das Letras"
@@ -21,6 +22,7 @@ public enum GameKind: String, Codable, CaseIterable, Identifiable {
         case .writing: return "Caderno Mágico"
         case .drawing: return "Ateliê de Desenho"
         case .coloring: return "Jardim de Colorir"
+        case .dressUp: return "Guarda-roupa Mágico"
         }
     }
 }
@@ -48,6 +50,7 @@ public enum LearningLevel: String, Codable, CaseIterable, Identifiable {
         case (_, .writing): return "Desenhar letras e números, do molde à escrita com um modelo ao lado."
         case (_, .drawing): return "Criar desenhos livres com cores, texturas e pincéis."
         case (_, .coloring): return "Preencher desenhos com as cores e texturas que imaginar."
+        case (_, .dressUp): return "Inventar personagens e escolher roupas para cada aventura."
         }
     }
 }

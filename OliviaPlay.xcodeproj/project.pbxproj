@@ -66,6 +66,16 @@
 			"isa" = "PBXBuildFile";
 			"fileRef" = "D72EE9E6843475196355AAC8";
 		};
+		"3BC9374A0DBEC231ED058ED7" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "DressUpGame.swift";
+			"sourceTree" = "<group>";
+		};
+		"DC30DB2C37792B070E4FDA8C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "3BC9374A0DBEC231ED058ED7";
+		};
 		"AB043D0B3A53C4621DF3F76E" = {
 			"isa" = "PBXFileReference";
 			"lastKnownFileType" = "sourcecode.swift";
@@ -150,6 +160,7 @@
 			"isa" = "PBXGroup";
 			"children" = (
 				"D72EE9E6843475196355AAC8",
+				"3BC9374A0DBEC231ED058ED7",
 				"AB043D0B3A53C4621DF3F76E",
 				"4E0C46BFED9DE7B5965F9912",
 				"C3C68884B0C421384CD077FD",
@@ -261,6 +272,226 @@
 		"D441F77E7F6D6EDC49ED7ACD" = {
 			"isa" = "PBXBuildFile";
 			"fileRef" = "AFFBD01E50D85662069C14B7";
+		};
+		"CE0AB8A939B511719DEF4DEF" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-free-intro.mp3";
+			"sourceTree" = "<group>";
+		};
+		"3A0CEDCCC49FAE08FC0C43AD" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "CE0AB8A939B511719DEF4DEF";
+		};
+		"9DC003A6A9352431D09FAC60" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-hint-ballet.mp3";
+			"sourceTree" = "<group>";
+		};
+		"AD5B68F80AFDBDE8FA2F1E71" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "9DC003A6A9352431D09FAC60";
+		};
+		"37D81AA3BC610608D9BE2E67" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-hint-beach.mp3";
+			"sourceTree" = "<group>";
+		};
+		"C888157EFBF3E87CF850E72E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "37D81AA3BC610608D9BE2E67";
+		};
+		"2C5E9E0949A609E979422D9E" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-hint-play.mp3";
+			"sourceTree" = "<group>";
+		};
+		"2E5827DE5E183F63968694F8" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "2C5E9E0949A609E979422D9E";
+		};
+		"B588C5B83AF20140FC21E824" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-hint-pool.mp3";
+			"sourceTree" = "<group>";
+		};
+		"3F309AE206D80C83EC00F672" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "B588C5B83AF20140FC21E824";
+		};
+		"BFDA7284A9042A92E9077A67" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-hint-rain.mp3";
+			"sourceTree" = "<group>";
+		};
+		"676928F7991EAAE993001E1C" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "BFDA7284A9042A92E9077A67";
+		};
+		"A175D0ED7CBA4C382D16BFBD" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-hint-school.mp3";
+			"sourceTree" = "<group>";
+		};
+		"D15B8FE60F7250C6F698EC0A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "A175D0ED7CBA4C382D16BFBD";
+		};
+		"54D07EB44483926D11364557" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-intro.mp3";
+			"sourceTree" = "<group>";
+		};
+		"BA5E85B70E54FFDBC180D958" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "54D07EB44483926D11364557";
+		};
+		"B36DB2ABB7644F9BFF0937C5" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-prompt-ballet.mp3";
+			"sourceTree" = "<group>";
+		};
+		"511B4FBC774D27104B0FC622" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "B36DB2ABB7644F9BFF0937C5";
+		};
+		"8C1BB0B2AF2F96C96FD20576" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-prompt-beach.mp3";
+			"sourceTree" = "<group>";
+		};
+		"D4E5AB4E3A6FE0806F637C7A" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8C1BB0B2AF2F96C96FD20576";
+		};
+		"D7B18EF2CD6EABFBC7B8DB43" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-prompt-play.mp3";
+			"sourceTree" = "<group>";
+		};
+		"E7150CE3E5074A1C31C7E04E" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D7B18EF2CD6EABFBC7B8DB43";
+		};
+		"B5D684C41BABF7F60D51D6D0" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-prompt-pool.mp3";
+			"sourceTree" = "<group>";
+		};
+		"468839A44494F19F695C4387" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "B5D684C41BABF7F60D51D6D0";
+		};
+		"661B88226DDB4FFA70B11A30" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-prompt-rain.mp3";
+			"sourceTree" = "<group>";
+		};
+		"925EE01FFD70995606EE2A0F" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "661B88226DDB4FFA70B11A30";
+		};
+		"D8D8EB76178CC75701764F61" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-prompt-school.mp3";
+			"sourceTree" = "<group>";
+		};
+		"7A1AA1E4BE4879409EDA6054" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "D8D8EB76178CC75701764F61";
+		};
+		"91DC98B11BBFA11BA29502CE" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-retry.mp3";
+			"sourceTree" = "<group>";
+		};
+		"C4B94E15D824C1D42E7E9FDC" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "91DC98B11BBFA11BA29502CE";
+		};
+		"F8411FD00D366036326A3768" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-saved.mp3";
+			"sourceTree" = "<group>";
+		};
+		"FEEE8EBE28B3BD283CAAA372" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F8411FD00D366036326A3768";
+		};
+		"F0B159065C62B4E725A0F388" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-success-ballet.mp3";
+			"sourceTree" = "<group>";
+		};
+		"8D5759DD2D82EF4449BD6221" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "F0B159065C62B4E725A0F388";
+		};
+		"05E5AAFA7D46BFD4642BB17F" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-success-beach.mp3";
+			"sourceTree" = "<group>";
+		};
+		"76569568C68B58AE9AE650D4" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "05E5AAFA7D46BFD4642BB17F";
+		};
+		"0B3B58045743A9D11CBA084E" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-success-play.mp3";
+			"sourceTree" = "<group>";
+		};
+		"442BA5C1B3D5416AC06A2733" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "0B3B58045743A9D11CBA084E";
+		};
+		"BF77F32FD301884446B4FD49" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-success-pool.mp3";
+			"sourceTree" = "<group>";
+		};
+		"10B5CCD153BF6F551D67F935" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "BF77F32FD301884446B4FD49";
+		};
+		"8929E3C077810ADC578DAD79" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-success-rain.mp3";
+			"sourceTree" = "<group>";
+		};
+		"29E52625E94B1BDCB4D684E6" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "8929E3C077810ADC578DAD79";
+		};
+		"34EBD457335789DAADC83054" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "audio.mp3";
+			"path" = "dressup-success-school.mp3";
+			"sourceTree" = "<group>";
+		};
+		"4EF8F1A19B0EEA65E3821070" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "34EBD457335789DAADC83054";
 		};
 		"5A868663BED2D4A02FD00DBC" = {
 			"isa" = "PBXFileReference";
@@ -2154,6 +2385,28 @@
 				"5DF85E0015F83604B18E5687",
 				"66F483EC65943A354224B8F3",
 				"AFFBD01E50D85662069C14B7",
+				"CE0AB8A939B511719DEF4DEF",
+				"9DC003A6A9352431D09FAC60",
+				"37D81AA3BC610608D9BE2E67",
+				"2C5E9E0949A609E979422D9E",
+				"B588C5B83AF20140FC21E824",
+				"BFDA7284A9042A92E9077A67",
+				"A175D0ED7CBA4C382D16BFBD",
+				"54D07EB44483926D11364557",
+				"B36DB2ABB7644F9BFF0937C5",
+				"8C1BB0B2AF2F96C96FD20576",
+				"D7B18EF2CD6EABFBC7B8DB43",
+				"B5D684C41BABF7F60D51D6D0",
+				"661B88226DDB4FFA70B11A30",
+				"D8D8EB76178CC75701764F61",
+				"91DC98B11BBFA11BA29502CE",
+				"F8411FD00D366036326A3768",
+				"F0B159065C62B4E725A0F388",
+				"05E5AAFA7D46BFD4642BB17F",
+				"0B3B58045743A9D11CBA084E",
+				"BF77F32FD301884446B4FD49",
+				"8929E3C077810ADC578DAD79",
+				"34EBD457335789DAADC83054",
 				"5A868663BED2D4A02FD00DBC",
 				"86FC0AF69856099F5720B5BD",
 				"1BCF8B283F8491899BAE4F1F",
@@ -2385,6 +2638,26 @@
 			"isa" = "PBXBuildFile";
 			"fileRef" = "2D81D19E875970B8E3E94A66";
 		};
+		"6CAE1F6A4EDB177533436C49" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "DressUpAvatar.swift";
+			"sourceTree" = "<group>";
+		};
+		"04DB2448A1E8CE7D1FCA6B85" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "6CAE1F6A4EDB177533436C49";
+		};
+		"CDB55D6AA3D45060F8ED928C" = {
+			"isa" = "PBXFileReference";
+			"lastKnownFileType" = "sourcecode.swift";
+			"path" = "DressUpGameView.swift";
+			"sourceTree" = "<group>";
+		};
+		"B7D078705137BAE9C4C389B4" = {
+			"isa" = "PBXBuildFile";
+			"fileRef" = "CDB55D6AA3D45060F8ED928C";
+		};
 		"29F49282D28EB502B6847F9B" = {
 			"isa" = "PBXFileReference";
 			"lastKnownFileType" = "sourcecode.swift";
@@ -2461,6 +2734,8 @@
 				"122C496AE010C63FA80A838C",
 				"6A927A45B56AE7E425536206",
 				"2D81D19E875970B8E3E94A66",
+				"6CAE1F6A4EDB177533436C49",
+				"CDB55D6AA3D45060F8ED928C",
 				"29F49282D28EB502B6847F9B",
 				"D7C52D0F7AB5216ACCF805CC",
 				"85FFA64DBE1C08F40E05DC8F",
@@ -2585,6 +2860,7 @@
 				"1561526D3BACEE071866DD05",
 				"06F85772E349730DF565B562",
 				"D28A434501BEB3B4AF16E1CD",
+				"DC30DB2C37792B070E4FDA8C",
 				"A66223E1C9F062405B951BD9",
 				"F758A5AF9FF461CB782E8DDF",
 				"4C11E813680BC239518FEF64",
@@ -2596,6 +2872,8 @@
 				"91E0DCB8F5172968284F1DEE",
 				"83B4104960315E47C1F6E9E6",
 				"53EFF510BF432C2D92879C24",
+				"04DB2448A1E8CE7D1FCA6B85",
+				"B7D078705137BAE9C4C389B4",
 				"4D933E0A5ADFCB4F23ED9DB9",
 				"0F2F5C22271EBBCE3660A32C",
 				"B8A52B56D8DDB82054AE6942",
@@ -2625,6 +2903,28 @@
 				"0622B59AFD858CA41D78A7EE",
 				"CDF61271AE99BEAFC16A2A78",
 				"D441F77E7F6D6EDC49ED7ACD",
+				"3A0CEDCCC49FAE08FC0C43AD",
+				"AD5B68F80AFDBDE8FA2F1E71",
+				"C888157EFBF3E87CF850E72E",
+				"2E5827DE5E183F63968694F8",
+				"3F309AE206D80C83EC00F672",
+				"676928F7991EAAE993001E1C",
+				"D15B8FE60F7250C6F698EC0A",
+				"BA5E85B70E54FFDBC180D958",
+				"511B4FBC774D27104B0FC622",
+				"D4E5AB4E3A6FE0806F637C7A",
+				"E7150CE3E5074A1C31C7E04E",
+				"468839A44494F19F695C4387",
+				"925EE01FFD70995606EE2A0F",
+				"7A1AA1E4BE4879409EDA6054",
+				"C4B94E15D824C1D42E7E9FDC",
+				"FEEE8EBE28B3BD283CAAA372",
+				"8D5759DD2D82EF4449BD6221",
+				"76569568C68B58AE9AE650D4",
+				"442BA5C1B3D5416AC06A2733",
+				"10B5CCD153BF6F551D67F935",
+				"29E52625E94B1BDCB4D684E6",
+				"4EF8F1A19B0EEA65E3821070",
 				"A436561423D363E1B252AD58",
 				"FFA484EA01FBA1FFE4A07EF0",
 				"25623BE24F306A78E68F6B64",
@@ -2847,14 +3147,14 @@
 			"buildSettings" = {
 				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
 				"CODE_SIGN_STYLE" = "Automatic";
-				"CURRENT_PROJECT_VERSION" = "7";
+				"CURRENT_PROJECT_VERSION" = "8";
 				"GENERATE_INFOPLIST_FILE" = "NO";
 				"INFOPLIST_FILE" = "OliviaPlay/Info.plist";
 				"LD_RUNPATH_SEARCH_PATHS" = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				"MARKETING_VERSION" = "1.5.1";
+				"MARKETING_VERSION" = "1.6";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "br.com.oliviaplay.app";
 				"PRODUCT_NAME" = "$(TARGET_NAME)";
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";
@@ -2890,14 +3190,14 @@
 			"buildSettings" = {
 				"ASSETCATALOG_COMPILER_APPICON_NAME" = "AppIcon";
 				"CODE_SIGN_STYLE" = "Automatic";
-				"CURRENT_PROJECT_VERSION" = "7";
+				"CURRENT_PROJECT_VERSION" = "8";
 				"GENERATE_INFOPLIST_FILE" = "NO";
 				"INFOPLIST_FILE" = "OliviaPlay/Info.plist";
 				"LD_RUNPATH_SEARCH_PATHS" = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				"MARKETING_VERSION" = "1.5.1";
+				"MARKETING_VERSION" = "1.6";
 				"PRODUCT_BUNDLE_IDENTIFIER" = "br.com.oliviaplay.app";
 				"PRODUCT_NAME" = "$(TARGET_NAME)";
 				"SUPPORTED_PLATFORMS" = "iphoneos iphonesimulator";

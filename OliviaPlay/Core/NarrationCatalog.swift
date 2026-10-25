@@ -107,6 +107,8 @@ public enum NarrationCatalog {
             text = "Você criou um desenho cheio de imaginação! Vamos brincar de colorir?"
         case .coloring:
             text = "Suas cores deixaram o jardim cheio de vida! Vamos escolher outra aventura?"
+        case .dressUp:
+            text = "Seu guarda-roupa ficou cheio de imaginação! Vamos escolher outra aventura?"
         }
         return NarrationCue(id: "completed-\(game.rawValue)", text: text, kind: .feedback)
     }
@@ -208,7 +210,46 @@ public enum NarrationCatalog {
         text: "Vamos colorir! Escolha um desenho, uma cor e uma textura. Depois, toque na parte que você quer pintar. Pode inventar do seu jeitinho!",
         kind: .instruction)
 
-    /// Enumerates bundled recordings for all seven games.
+    public static let dressUpIntro = NarrationCue(
+        id: "dressup-intro",
+        text: "Vamos brincar de vestir! Escolha um personagem. Você pode inventar um visual no modo livre ou descobrir o que vestir em cada desafio.",
+        kind: .instruction)
+
+    public static let dressUpFreeIntro = NarrationCue(
+        id: "dressup-free-intro",
+        text: "Pode inventar do seu jeitinho! Escolha roupas, acessórios, cabelo e maquiagem. Você também pode mudar os olhos, o nariz e a boca. Toque nas peças para experimentar.",
+        kind: .instruction)
+
+    public static func dressUpPrompt(_ situation: DressUpSituation) -> NarrationCue {
+        NarrationCue(id: "dressup-prompt-\(situation.rawValue)", text: situation.prompt, kind: .instruction)
+    }
+
+    public static func dressUpHint(_ situation: DressUpSituation) -> NarrationCue {
+        NarrationCue(id: "dressup-hint-\(situation.rawValue)", text: situation.hint, kind: .instruction)
+    }
+
+    public static func dressUpSuccess(_ situation: DressUpSituation) -> NarrationCue {
+        let text: String
+        switch situation {
+        case .rain: text = "Muito bem! A capa, as botas e o guarda-chuva ajudam a brincar num dia de chuva!"
+        case .ballet: text = "Que alegria! A roupa de dança e as sapatilhas estão prontas para o balé!"
+        case .school: text = "Tudo pronto para a escola! Roupas confortáveis, sapatos e mochila para mais descobertas!"
+        case .play: text = "Muito bem! Com roupas e sapatos confortáveis, a brincadeira pode começar!"
+        case .pool: text = "Tudo pronto para a piscina! A roupa de banho deixa os movimentos livres na água!"
+        case .beach: text = "Muito bem! Roupa de banho e chapéu para aproveitar a praia!"
+        }
+        return NarrationCue(id: "dressup-success-\(situation.rawValue)", text: text, kind: .feedback)
+    }
+
+    public static let dressUpRetry = NarrationCue(
+        id: "dressup-retry",
+        text: "Está quase! Vamos pensar no que ajuda nessa aventura? Toque na dica para descobrir e experimente outras peças.",
+        kind: .feedback)
+
+    public static let dressUpSaved = NarrationCue(
+        id: "dressup-saved", text: "Seu visual ficou guardado! Você pode continuar inventando à vontade.", kind: .feedback)
+
+    /// Enumerates bundled recordings for all eight games.
     public static let allCues: [NarrationCue] = {
         let letters = LearningLevel.allCases.flatMap { LearningCurriculum.letterChallenges(level: $0) }
         let numbers = LearningLevel.allCases.flatMap { LearningCurriculum.mathChallenges(level: $0) }
@@ -226,6 +267,8 @@ public enum NarrationCatalog {
         cues += WritingCurriculum.allGlyphs.map(writingPrompt)
         cues += [writingSuccess, writingEmpty, writingTooSmall, writingIncomplete, writingOffTrack]
         cues += [drawingIntro, coloringIntro]
+        cues += [dressUpIntro, dressUpFreeIntro, dressUpRetry, dressUpSaved]
+        cues += DressUpSituation.allCases.flatMap { [dressUpPrompt($0), dressUpHint($0), dressUpSuccess($0)] }
         cues += [6, 8, 10, 12, 14, 16].flatMap {
             [memoryIntro(pieceCount: $0), memoryCompleted(pieceCount: $0, nextPieceCount: min($0 + 2, 16))]
         }

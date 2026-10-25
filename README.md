@@ -1,6 +1,6 @@
 # Mundo da Olívia
 
-Aplicativo nativo SwiftUI para o iPad de 9ª geração, com iPadOS 16 ou posterior. Uma abertura animada apresenta a Olívia com um pequeno salto, brilhos e seu gatinho. O catálogo em uma casinha mágica cor-de-rosa coloca Olívia no centro de sete aventuras:
+Aplicativo nativo SwiftUI para o iPad de 9ª geração, com iPadOS 16 ou posterior. Uma abertura animada apresenta a Olívia com um pequeno salto, brilhos e seu gatinho. O catálogo em uma casinha mágica cor-de-rosa coloca Olívia no centro de oito aventuras:
 
 - **Jardim das Letras:** reconhecer letras iniciais e montar palavras curtas em português.
 - **Piquenique dos Números:** contar até 5 no começo, avançar até 10 e juntar grupos com apoio visual.
@@ -9,18 +9,21 @@ Aplicativo nativo SwiftUI para o iPad de 9ª geração, com iPadOS 16 ou posteri
 - **Caderno Mágico:** escrever letras maiúsculas de A a Z e números de 0 a 9 com o dedo ou Apple Pencil. Três níveis: molde, pontinhos e cópia com modelo separado, com avaliação local da semelhança dos traços. Veja [como funciona a escrita](docs/escrita.md).
 - **Ateliê de Desenho:** desenhar livremente com o dedo ou Apple Pencil, escolher cores e texturas e alternar entre três tamanhos de pincel.
 - **Jardim de Colorir:** escolher uma ilustração e tocar nas partes para preencher com cores e texturas, sem sair do contorno.
+- **Guarda-roupa Mágico:** escolher entre Luna, Kitty Fada (de A Casa Mágica da Gabby), Maya e um unicórnio; personalizar roupas, acessórios, cabelos, maquiagem, nariz, olhos e boca. Oferece modo livre e desafios de chuva, balé, escola, brincadeira, piscina e praia. Veja [como funciona o jogo de vestir](docs/vestir.md).
 
 As duas atividades de arte têm 11 cores, cinco texturas, borracha, desfazer/refazer e limpeza com confirmação. As criações ficam salvas automaticamente no aparelho, incluindo o preenchimento de cada desenho para colorir. São espaços de criação livre, sem pontuação ou níveis, e não alteram o potinho de estrelas. Recomeçar o progresso dos jogos preserva as criações; elas podem ser apagadas dentro de cada atividade.
 
+No Guarda-roupa Mágico, cada personagem conserva seu próprio visual. As seis situações descobertas ficam salvas separadamente, sem alterar estrelas ou níveis dos jogos de aprendizagem. Os desafios aceitam combinações apropriadas à situação e preservam a liberdade de escolher aparência, maquiagem e cores.
+
 Nos jogos de letras, números e formas, cada visita contém 5 desafios, com instruções faladas e reforço positivo. O trem tem 48 sequências diferentes e avança de fase a cada duas aventuras concluídas, até a terceira fase. Na memória, cada tabuleiro completo libera mais duas peças e dá uma estrela por par; a partir de 16 peças, novas partidas mantêm esse tamanho e embaralham novamente. Não há cronômetro nem perda de estrelas por errar. As atividades são pensadas para uma criança de 5 anos. Não representam material oficial nem certificação do currículo da Maple Bear.
 
-Os sete jogos incluem 196 gravações de narração com a mesma voz feminina, frases naturais em português e volume uniforme. Os áudios ficam no próprio aplicativo; não é necessário baixar vozes no iPad nem manter conexão para ouvi-los. O Ateliê de Desenho e o Jardim de Colorir também têm suas instruções gravadas. Detalhes de produção e manutenção em [docs/narracao.md](docs/narracao.md).
+Os oito jogos incluem 218 gravações de narração com a mesma voz feminina, frases naturais em português e volume uniforme. Os áudios ficam no próprio aplicativo; não é necessário baixar vozes no iPad nem manter conexão para ouvi-los. As instruções de arte e as situações, dicas e respostas do Guarda-roupa Mágico também têm gravações. Detalhes de produção e manutenção em [docs/narracao.md](docs/narracao.md).
 
-Os 57 testes automatizados da versão 1.5.1 passaram, incluindo migração dos dados anteriores, avaliação dos traços, comparação entre os 36 modelos de escrita, persistência, limites e histórico das atividades de arte e cobertura das duas novas narrações. As estrelas, níveis e posições dos jogos anteriores são preservados ao atualizar o aplicativo. Na memória, um tabuleiro interrompido recomeça embaralhado, mantendo a quantidade de peças já alcançada.
+Os 77 testes automatizados da versão 1.6 passaram, incluindo migração dos dados anteriores, avaliação dos traços, comparação entre os 36 modelos de escrita, persistência e histórico das atividades de arte, desafios e visuais do guarda-roupa, substituições de Léo por Kitty Fada e de Theo pelo unicórnio e cobertura das narrações. O build para iPad Simulator e os testes interativos do novo jogo na prévia Mac também passaram. As estrelas, níveis e posições dos jogos anteriores são preservados ao atualizar o aplicativo. Na memória, um tabuleiro interrompido recomeça embaralhado, mantendo a quantidade de peças já alcançada.
 
 A abertura dura cerca de 2,2 segundos e permite entrar imediatamente pelo botão “Vamos brincar!”. Aparece uma vez por execução, respeita Reduzir Movimento e espera pelo botão quando o VoiceOver está ativo.
 
-A versão 1.5.1, build 7, foi instalada e aberta no iPad da Olívia em 17/10/2026, incluindo as narrações gravadas de desenho e colorir. O perfil de desenvolvimento desse pacote vence em 18/10/2026 às 14:36, horário de São Paulo; após a expiração é necessário renovar a assinatura e reinstalar.
+A versão 1.6, build 8, foi compilada, assinada, instalada e aberta no iPad da Olívia em 25/10/2026, incluindo o Guarda-roupa Mágico com Kitty Fada e unicórnio. A atualização usa o mesmo identificador, sem desinstalar o aplicativo anterior. Após a confiança no perfil renovado ser confirmada no iPad, a abertura e o processo em execução foram verificados pelo Xcode. A assinatura atual vence em **01/11/2026 às 08:37**, horário de São Paulo; depois dessa data será necessário renovar a assinatura e reinstalar.
 
 O aplicativo funciona localmente, sem conta, anúncios, compras, analytics ou servidor. Progresso, criações e preferências ficam no dispositivo. As fotos originais em `assets/` são referências privadas: essa pasta não entra no projeto nem no aplicativo.
 

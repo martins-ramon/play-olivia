@@ -112,6 +112,27 @@ final class NarrationTests: XCTestCase {
         XCTAssertNil(catalogue[NarrationCatalog.completed(.coloring).id])
     }
 
+    func testDressUpNarrationCoversFreePlayAndEverySituation() {
+        assertCovered(NarrationCatalog.dressUpIntro)
+        assertCovered(NarrationCatalog.dressUpFreeIntro)
+        assertCovered(NarrationCatalog.dressUpRetry)
+        assertCovered(NarrationCatalog.dressUpSaved)
+        for situation in DressUpSituation.allCases {
+            let prompt = NarrationCatalog.dressUpPrompt(situation)
+            let hint = NarrationCatalog.dressUpHint(situation)
+            assertCovered(prompt)
+            assertCovered(hint)
+            assertCovered(NarrationCatalog.dressUpSuccess(situation))
+            XCTAssertEqual(prompt.text, situation.prompt)
+            XCTAssertEqual(hint.text, situation.hint)
+            XCTAssertEqual(prompt.kind, .instruction)
+            XCTAssertEqual(hint.kind, .instruction)
+            XCTAssertEqual(NarrationCatalog.dressUpSuccess(situation).kind, .feedback)
+        }
+        XCTAssertTrue(GameKind.dressUp.isCreative)
+        XCTAssertNil(catalogue[NarrationCatalog.completed(.dressUp).id])
+    }
+
     func testCatalogueCanBeExportedWithUniqueSafeStableIdentifiers() throws {
         let cues = NarrationCatalog.allCues
         XCTAssertFalse(cues.isEmpty)

@@ -139,6 +139,46 @@ struct CoreChecks {
         try require(PortugueseSpeech.letterName("m") == "eme", "Wrong Portuguese letter name")
         try require(PortugueseSpeech.letterName("S") == "esse", "Wrong Portuguese letter name")
         print("PASS: Local storage round-trip, corrupt-data recovery, reset and Portuguese letter names.")
+        for character in DressUpCharacter.allCases {
+            for situation in DressUpSituation.allCases {
+                var look = DressUpLook(character: character)
+                let ids: [String]
+                switch situation {
+                case .rain: ids = ["raincoat", "boots", "umbrella"]
+                case .ballet: ids = ["tutu", "ballet"]
+                case .school: ids = ["dress", "sandals", "backpack"]
+                case .play: ids = ["tee", "shorts", "sneakers"]
+                case .pool: ids = ["swimsuit", "shoes-none"]
+                case .beach: ids = ["swimshorts", "cap"]
+                }
+                for id in ids {
+                    guard let item = DressUpCatalog.item(id: id) else { throw Failure(description: "Missing dress-up item") }
+                    look.select(item)
+                }
+                try require(DressUpChallenge.evaluate(look: look, for: situation).isComplete, "Unsolvable dress-up situation")
+                for category in [DressUpCategory.hair, .eyes, .nose, .mouth, .makeup] {
+                    for item in DressUpCatalog.items(in: category) {
+                        look.select(item)
+                        try require(DressUpChallenge.evaluate(look: look, for: situation).isComplete, "Cosmetic choice affected challenge")
+                    }
+                }
+            }
+        }
+        var wardrobe = DressUpBook()
+        var dressed = wardrobe.currentLook
+        for id in ["umbrella", "backpack", "tutu", "ballet"] { dressed.select(DressUpCatalog.item(id: id)!) }
+        try require(dressed.accessories == ["umbrella", "backpack"], "Accessories cannot be combined")
+        try require(DressUpChallenge.evaluate(look: dressed, for: .ballet).isComplete, "Ballet outfit rejected")
+        dressed.select(DressUpCatalog.item(id: "leggings")!)
+        try require(dressed.itemID(for: .outfits) == "none", "Separates did not replace one-piece outfit")
+        wardrobe.currentLook = dressed
+        wardrobe.completedSituations = [.ballet]
+        let wardrobeStore = DressUpStore(defaults: defaults)
+        try require(wardrobeStore.save(wardrobe), "Wardrobe save failed")
+        try require(wardrobeStore.load() == wardrobe, "Wardrobe round-trip failed")
+        defaults.set(Data("invalid json".utf8), forKey: DressUpStore.key)
+        try require(wardrobeStore.load() == DressUpBook(), "Invalid wardrobe not recovered")
+        print("PASS: Dress-up situations, cosmetic freedom, layering, accessories and separate wardrobe storage.")
         print("All core checks passed.")
     }
 }

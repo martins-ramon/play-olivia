@@ -10,6 +10,8 @@ xcuserdata/
 *.mobileprovision
 .env
 .env.*
+.claude-flow/
+.swarm/
 __pycache__/
 # Prévias geradas por scripts/render-previews.sh.
 /output/previews/

@@ -54,7 +54,7 @@ struct ParentAreaView: View {
         VStack(alignment: .leading, spacing: 25) {
             VStack(alignment: .leading, spacing: 7) {
                 Text("No ritmo da Olívia").font(PlayTheme.font(28, .heavy)).foregroundStyle(PlayTheme.ink)
-                Text("Cinco desafios nas aventuras de letras, números, formas e escrita. Na memória, um tabuleiro de cada vez. Desenho e colorir são espaços de criação livre. Sem cronômetro, sem perder vidas e com novas tentativas sempre disponíveis.")
+                Text("Cinco desafios nas aventuras de letras, números, formas e escrita. Na memória, um tabuleiro de cada vez. Desenho e colorir são espaços de criação livre. O Guarda-roupa Mágico tem criação livre e seis situações para descobrir. Sem cronômetro, sem perder vidas e com novas tentativas sempre disponíveis.")
                     .font(PlayTheme.font(16, .medium)).foregroundStyle(PlayTheme.muted)
             }
 
@@ -75,6 +75,7 @@ struct ParentAreaView: View {
             patternProgress
             writingProgress
             creativeActivities
+            dressUpActivities
 
             VStack(alignment: .leading, spacing: 10) {
                 Label("Uma brincadeira só dela", systemImage: "heart.fill").font(PlayTheme.font(18))
@@ -142,6 +143,17 @@ struct ParentAreaView: View {
                 .font(PlayTheme.font(14, .medium)).foregroundStyle(PlayTheme.muted)
             Text("Recomeçar o potinho de estrelas preserva os desenhos. Para apagar uma criação, use o botão de limpar dentro do jogo.")
                 .font(PlayTheme.font(13, .medium)).foregroundStyle(PlayTheme.muted)
+        }.padding(20).background(.white, in: RoundedRectangle(cornerRadius: 22))
+    }
+
+    private var dressUpActivities: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Label("Guarda-roupa Mágico", systemImage: "tshirt.fill")
+                .font(PlayTheme.font(20)).foregroundStyle(PlayTheme.ink)
+            Text("Quatro personagens para personalizar com roupas, acessórios, cabelo, maquiagem e diferentes olhos, narizes e bocas. No modo livre, toda combinação vale. Nos desafios, a Olívia escolhe o que usar na chuva, no balé, na escola, ao brincar, na piscina ou na praia.")
+                .font(PlayTheme.font(14, .medium)).foregroundStyle(PlayTheme.muted)
+            Text("Os desafios consideram a utilidade das peças para cada situação. Cores, aparência, maquiagem e personagem ficam sempre à escolha dela. As criações e as situações descobertas são salvas apenas neste aparelho, separadas do potinho de estrelas.")
+                .font(PlayTheme.font(14, .medium)).foregroundStyle(PlayTheme.muted)
         }.padding(20).background(.white, in: RoundedRectangle(cornerRadius: 22))
     }
 

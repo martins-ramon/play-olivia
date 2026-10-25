@@ -34,7 +34,7 @@ public struct LearningProfile: Codable, Equatable {
         switch game {
         case .memory: return memoryCompletedRounds
         case .writing: return completedWritingSessions.count
-        case .drawing, .coloring: return 0
+        case .drawing, .coloring, .dressUp: return 0
         default: return completedSessions.filter { $0.game == game }.count
         }
     }
@@ -46,7 +46,7 @@ public struct LearningProfile: Codable, Equatable {
         case .memory: return memoryPieceCount == 6 ? .start : .explore
         case .patterns: return .start
         case .writing: return .start
-        case .drawing, .coloring: return .start
+        case .drawing, .coloring, .dressUp: return .start
         }
     }
 
@@ -57,7 +57,7 @@ public struct LearningProfile: Codable, Equatable {
         case .memory: return memoryCompletedRounds
         case .patterns: return patternCursor
         case .writing: return writingCursor(for: writingLevel)
-        case .drawing, .coloring: return 0
+        case .drawing, .coloring, .dressUp: return 0
         }
     }
 
@@ -81,7 +81,7 @@ public struct LearningProfile: Codable, Equatable {
         case .writing:
             // Writing has its own three levels and a separate deck per level.
             break
-        case .drawing, .coloring:
+        case .drawing, .coloring, .dressUp:
             // Creative activities keep artwork instead of levels or deck cursors.
             break
         }
@@ -103,7 +103,7 @@ public struct LearningProfile: Codable, Equatable {
             case .memory: break
             case .patterns: patternCursor = max(patternCursor, summary.nextCursor)
             case .writing: break
-            case .drawing, .coloring: break
+            case .drawing, .coloring, .dressUp: break
             }
         }
         return true

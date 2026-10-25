@@ -69,6 +69,160 @@
       "kind": "instruction"
     },
     {
+      "id": "dressup-free-intro",
+      "text": "Pode inventar do seu jeitinho! Escolha roupas, acessórios, cabelo e maquiagem. Você também pode mudar os olhos, o nariz e a boca. Toque nas peças para experimentar.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "f4c7748c01182743fca914e9ac4da8ddb2b8e73a92a54bb1a0ee56301e9e8584",
+      "kind": "instruction"
+    },
+    {
+      "id": "dressup-hint-ballet",
+      "text": "Você pode usar a roupa de balé ou uma camiseta com legging. Nos calçados, escolha sapatilhas.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "f65f3a1c6c7e741df77ebbb9a5a27fc66b1c8652b2f95f8aab5d7f315ae948ea",
+      "kind": "instruction"
+    },
+    {
+      "id": "dressup-hint-beach",
+      "text": "Nos conjuntos, escolha o maiô ou a roupa de banho com shorts. Depois, coloque um chapéu de sol ou boné.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "f8cb13d6be0429bc1ec9b688487f4426010e8ef8b94195df1a5ef3a752ecc5ed",
+      "kind": "instruction"
+    },
+    {
+      "id": "dressup-hint-play",
+      "text": "Uma blusa com parte de baixo ou um vestido deixam você brincar. Para correr, escolha tênis. A bola é opcional!",
+      "model": "eleven_multilingual_v2",
+      "sha256": "dd90ef43de29b1f1c43f39f717f23d8a89c6dc984f3d7b89c350db98bbb5a809",
+      "kind": "instruction"
+    },
+    {
+      "id": "dressup-hint-pool",
+      "text": "Procure o maiô ou a roupa de banho com shorts nos conjuntos. Os óculos de natação são uma escolha sua!",
+      "model": "eleven_multilingual_v2",
+      "sha256": "2829a9453d45a9cc2f4544e41a7a01944c2592d18447cc7d68434e314fc27ff6",
+      "kind": "instruction"
+    },
+    {
+      "id": "dressup-hint-rain",
+      "text": "Procure a capa nas blusas, as galochas nos calçados e o guarda-chuva nos acessórios.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "4c790971189946763cb99000f213e3f65d217ff31663f8b30b8e0655a8577756",
+      "kind": "instruction"
+    },
+    {
+      "id": "dressup-hint-school",
+      "text": "Uma blusa com parte de baixo ou um vestido combinam com a escola. Escolha tênis ou sandálias e leve a mochila.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "61688fdbb5958fced13bb679502226dd930fb9c995fb145f6103599aecd19765",
+      "kind": "instruction"
+    },
+    {
+      "id": "dressup-intro",
+      "text": "Vamos brincar de vestir! Escolha um personagem. Você pode inventar um visual no modo livre ou descobrir o que vestir em cada desafio.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "6566fb39b23c6fe54529caf53a0952ef7ba8cbc4e20d204e74f9983a0997063e",
+      "kind": "instruction"
+    },
+    {
+      "id": "dressup-prompt-ballet",
+      "text": "Vamos para o balé! Escolha uma roupa para dançar e calce sapatilhas.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "6c6be2d2df191b9c0ec12a50257db3413886cc52e136838d9f8ca412d80d5f3f",
+      "kind": "instruction"
+    },
+    {
+      "id": "dressup-prompt-beach",
+      "text": "Hoje tem praia! Escolha uma roupa de banho e um chapéu ou boné para o sol.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "d0d0c0792142af167064be8c8a24e49791b1716768522df0ca3b1103b6c3d1ca",
+      "kind": "instruction"
+    },
+    {
+      "id": "dressup-prompt-play",
+      "text": "Vamos brincar no parque! Escolha roupas para se movimentar e calce tênis.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "7a742af19ef9e99c1f2fb9d5d84a2203717bb9de2ce13691977fcb0c15a06e97",
+      "kind": "instruction"
+    },
+    {
+      "id": "dressup-prompt-pool",
+      "text": "Vamos para a piscina! Escolha um maiô ou uma roupa de banho com shorts.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "3358100f31a67fb75e9609c09bc8dea6d8dafafbc6abb6cd66d06deb31964666",
+      "kind": "instruction"
+    },
+    {
+      "id": "dressup-prompt-rain",
+      "text": "Está chovendo! Vista uma capa de chuva, calce galochas e leve um guarda-chuva.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "775fc740dd41722e43543ff8c143110637b6ae60619cd7deb04054ebe6296ee5",
+      "kind": "instruction"
+    },
+    {
+      "id": "dressup-prompt-school",
+      "text": "É hora de ir para a escola! Escolha roupas para o dia, calçados confortáveis e uma mochila.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "4b93f6ddc996f7fabcc3173a2fe06693b653d8757d0a5e026c386bd40d516e2f",
+      "kind": "instruction"
+    },
+    {
+      "id": "dressup-retry",
+      "text": "Está quase! Vamos pensar no que ajuda nessa aventura? Toque na dica para descobrir e experimente outras peças.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "52230c6fefd117a4471e6920ab7b4c76a9cbb6976c5b315b40bfcec4f4845357",
+      "kind": "feedback"
+    },
+    {
+      "id": "dressup-saved",
+      "text": "Seu visual ficou guardado! Você pode continuar inventando à vontade.",
+      "model": "eleven_multilingual_v2",
+      "sha256": "80696cd41b39abd4a4925d8356d60ad067b68f4d7aed34e62b045d141b4d399c",
+      "kind": "feedback"
+    },
+    {
+      "id": "dressup-success-ballet",
+      "text": "Que alegria! A roupa de dança e as sapatilhas estão prontas para o balé!",
+      "model": "eleven_multilingual_v2",
+      "sha256": "5d81a287c853f89e4ca458d3aa8b30430c024062b82f9c753ebfe8054ec1e2ef",
+      "kind": "feedback"
+    },
+    {
+      "id": "dressup-success-beach",
+      "text": "Muito bem! Roupa de banho e chapéu para aproveitar a praia!",
+      "model": "eleven_multilingual_v2",
+      "sha256": "99111f58f6c9d9ae2e3a64b47f8a136d4ddb5f50b1a0fd7d654f6b23997e91fc",
+      "kind": "feedback"
+    },
+    {
+      "id": "dressup-success-play",
+      "text": "Muito bem! Com roupas e sapatos confortáveis, a brincadeira pode começar!",
+      "model": "eleven_multilingual_v2",
+      "sha256": "2386e9e31578ca425b2b1bc3b38d9611a20bf56a942dc0f929babf58f6f1bf86",
+      "kind": "feedback"
+    },
+    {
+      "id": "dressup-success-pool",
+      "text": "Tudo pronto para a piscina! A roupa de banho deixa os movimentos livres na água!",
+      "model": "eleven_multilingual_v2",
+      "sha256": "a4d056f37c21772989c43d1c372b59ba98edb7710ba620e618c1df06f95af187",
+      "kind": "feedback"
+    },
+    {
+      "id": "dressup-success-rain",
+      "text": "Muito bem! A capa, as botas e o guarda-chuva ajudam a brincar num dia de chuva!",
+      "model": "eleven_multilingual_v2",
+      "sha256": "86288ce4e54fdc9b2dd5be16ca34bc6b200f6b9e296bb219e5fd2c9d9198b8a8",
+      "kind": "feedback"
+    },
+    {
+      "id": "dressup-success-school",
+      "text": "Tudo pronto para a escola! Roupas confortáveis, sapatos e mochila para mais descobertas!",
+      "model": "eleven_multilingual_v2",
+      "sha256": "25a8c1e43f99c6aa196e016d6b26d44025676e6ae615acce146af318775256f7",
+      "kind": "feedback"
+    },
+    {
       "id": "hint-letter-a",
       "text": "Procure a letra á. Ela está brilhando!",
       "model": "eleven_v3",

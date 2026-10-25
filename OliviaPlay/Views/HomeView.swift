@@ -23,7 +23,9 @@ struct HomeView: View {
                 case .drawing:
                     DrawingGameView(onExit: goHome, onNextAdventure: { open(.coloring) })
                 case .coloring:
-                    ColoringGameView(onExit: goHome, onNextAdventure: { open(.letters) })
+                    ColoringGameView(onExit: goHome, onNextAdventure: { open(.dressUp) })
+                case .dressUp:
+                    DressUpGameView(onExit: goHome, onNextAdventure: { open(.letters) })
                 }
             } else {
                 catalog
@@ -166,6 +168,7 @@ private struct AdventureCard: View {
         case .writing: return Color(hex: 0xB16A31)
         case .drawing: return Color(hex: 0x9B5291)
         case .coloring: return Color(hex: 0x317E78)
+        case .dressUp: return Color(hex: 0x9D5484)
         }
     }
     private var badge: String {
@@ -177,6 +180,7 @@ private struct AdventureCard: View {
         case .writing: return "TRAÇOS"
         case .drawing: return "CRIAR"
         case .coloring: return "COLORIR"
+        case .dressUp: return "VESTIR"
         }
     }
     private var title: String {
@@ -188,6 +192,7 @@ private struct AdventureCard: View {
         case .writing: return "Caderno\nMágico"
         case .drawing: return "Ateliê\nde Desenho"
         case .coloring: return "Jardim\nde Colorir"
+        case .dressUp: return "Guarda-roupa\nMágico"
         }
     }
     private var subtitle: String {
@@ -199,11 +204,13 @@ private struct AdventureCard: View {
         case .writing: return "Letras e números com o dedo."
         case .drawing: return "Sua imaginação vira desenho."
         case .coloring: return "Um toque, muitas cores."
+        case .dressUp: return "Um visual para cada aventura."
         }
     }
     private var progress: String {
         if game == .drawing { return "Cores e texturas" }
         if game == .coloring { return "Desenhos para colorir" }
+        if game == .dressUp { return "Livre e desafios" }
         if game == .memory {
             return "\(memoryPieces) peças para brincar"
         }
@@ -219,6 +226,7 @@ private struct AdventureCard: View {
         case .writing: return "Escrever letras e números com o dedo, com três níveis de ajuda"
         case .drawing: return "Desenhar livremente com várias cores, texturas e tamanhos de pincel"
         case .coloring: return "Escolher um desenho e tocar nas partes para preencher com cores e texturas"
+        case .dressUp: return "Escolher personagens, roupas e rostos, brincar livremente ou vestir para uma situação"
         }
     }
 
@@ -231,6 +239,7 @@ private struct AdventureCard: View {
         case .writing: return Color(hex: 0xF9E8C4)
         case .drawing: return Color(hex: 0xF2DFF2)
         case .coloring: return Color(hex: 0xD8F0E8)
+        case .dressUp: return Color(hex: 0xF4DEEA)
         }
     }
 
@@ -250,6 +259,7 @@ private struct AdventureCard: View {
                         case .writing: WritingRoomIllustration()
                         case .drawing: DrawingRoomIllustration()
                         case .coloring: ColoringRoomIllustration()
+                        case .dressUp: DressUpRoomIllustration()
                         case .letters, .numbers: RoomIllustration(isGarden: game == .letters)
                         }
                     }
@@ -294,6 +304,28 @@ private struct AdventureCard: View {
         .accessibilityHint(accessibilityHint)
         .accessibilityIdentifier("play-\(game.rawValue)")
         .frame(maxWidth: .infinity)
+    }
+}
+
+private struct DressUpRoomIllustration: View {
+    var body: some View {
+        ZStack {
+            Color(hex: 0xF4DEEA)
+            Circle().fill(.white.opacity(0.5)).frame(width: 90).offset(x: 28, y: -34)
+            RoundedRectangle(cornerRadius: 12).fill(Color(hex: 0xC28AA8))
+                .frame(width: 72, height: 91).offset(y: 6)
+            RoundedRectangle(cornerRadius: 8).fill(Color(hex: 0xFFF5F9))
+                .frame(width: 60, height: 79).offset(y: 6)
+            Capsule().fill(Color(hex: 0xC28AA8)).frame(width: 52, height: 3).offset(y: -20)
+            Image(systemName: "tshirt.fill").font(.system(size: 43))
+                .foregroundStyle(Color(hex: 0x9D5484)).offset(x: -5, y: 4)
+            Image(systemName: "sparkle").font(.system(size: 21))
+                .foregroundStyle(Color(hex: 0xD6A143)).offset(x: 25, y: -32)
+            Image(systemName: "heart.fill").font(.system(size: 11))
+                .foregroundStyle(Color(hex: 0xF0AFCA)).offset(x: -6, y: 1)
+            Image(systemName: "crown.fill").font(.system(size: 22))
+                .foregroundStyle(Color(hex: 0xD6A143)).rotationEffect(.degrees(12)).offset(x: 20, y: 35)
+        }.clipped().accessibilityHidden(true)
     }
 }
 
